@@ -1,0 +1,11 @@
+D:\test\윈폼미니프로젝트\윈폼미니프로젝트\bin\Debug\윈폼미니프로젝트.exe.config
+D:\test\윈폼미니프로젝트\윈폼미니프로젝트\bin\Debug\윈폼미니프로젝트.exe
+D:\test\윈폼미니프로젝트\윈폼미니프로젝트\bin\Debug\윈폼미니프로젝트.pdb
+D:\test\윈폼미니프로젝트\윈폼미니프로젝트\obj\Debug\윈폼미니프로젝트.csproj.AssemblyReference.cache
+D:\test\윈폼미니프로젝트\윈폼미니프로젝트\obj\Debug\윈폼미니프로젝트.csproj.SuggestedBindingRedirects.cache
+D:\test\윈폼미니프로젝트\윈폼미니프로젝트\obj\Debug\윈폼미니프로젝트.Form1.resources
+D:\test\윈폼미니프로젝트\윈폼미니프로젝트\obj\Debug\윈폼미니프로젝트.Properties.Resources.resources
+D:\test\윈폼미니프로젝트\윈폼미니프로젝트\obj\Debug\윈폼미니프로젝트.csproj.GenerateResource.cache
+D:\test\윈폼미니프로젝트\윈폼미니프로젝트\obj\Debug\윈폼미니프로젝트.csproj.CoreCompileInputs.cache
+D:\test\윈폼미니프로젝트\윈폼미니프로젝트\obj\Debug\윈폼미니프로젝트.exe
+D:\test\윈폼미니프로젝트\윈폼미니프로젝트\obj\Debug\윈폼미니프로젝트.pdb

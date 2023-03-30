@@ -13,11 +13,11 @@ namespace WindowsFormsApp1
     public partial class ChildForm : Form
     {
         String RecivedData;
-        public ChildForm(String Data)
+        public ChildForm(string txtMsg)
         {
             InitializeComponent();
 
-            RecivedData += "\r\n" + Data;
+            RecivedData += txtMsg;
             
             display2.Text = RecivedData;
         }

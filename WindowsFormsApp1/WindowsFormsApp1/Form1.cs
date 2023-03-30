@@ -26,52 +26,24 @@ namespace WindowsFormsApp1
         Boolean operatorChangeFlag = false;
         int firstOperand = 0;
         int secondOperand = 0;
+        private string txtMsg;
+       
         public Form1()
         {
             InitializeComponent();
         }
 
        
-    
-
-        private void ButtonResult_Click(object sender, EventArgs e)
-        {
-            secondOperand = Int32.Parse(display.Text);
-            if(currentOperator == Operators.Add)
-            {
-                firstOperand += secondOperand;
-                display.Text = firstOperand.ToString();
-            }
-            else if(currentOperator == Operators.Subtract)
-            {
-                firstOperand -= secondOperand;
-                display.Text = firstOperand.ToString();
-            }
-            else if(currentOperator == Operators.Multiply)
-            {
-                firstOperand *= secondOperand; 
-                display.Text = firstOperand.ToString();
-            }
-            else if(currentOperator == Operators.Divide)
-            {
-                if(secondOperand == 0)
-                {
-                    display.Text = "0으로 나눌 수 없습니다";
-                }
-                else
-                {
-                    firstOperand /= secondOperand;
-                    display.Text = firstOperand.ToString();
-                }
-            }
-
-        }
+  
 
         private void ButtonAdd_Click(object sender, EventArgs e)
         {
             firstOperand = Int32.Parse(display.Text);
             currentOperator = Operators.Add;
             operatorChangeFlag = true;
+
+            //텍스트박스1
+            textBox1.Text += "+";
         }
 
         private void ButtonSubtract_Click(object sender, EventArgs e)
@@ -79,6 +51,9 @@ namespace WindowsFormsApp1
             firstOperand = Int32.Parse(display.Text);
             currentOperator = Operators.Subtract;
             operatorChangeFlag = true;
+
+            //텍스트박스1
+            textBox1.Text += "-";
 
         }
 
@@ -88,6 +63,9 @@ namespace WindowsFormsApp1
             currentOperator = Operators.Multiply;
             operatorChangeFlag = true;
 
+            //텍스트박스1
+            textBox1.Text += "*";
+
         }
 
         private void ButtonDivide_Click(object sender, EventArgs e)
@@ -95,6 +73,9 @@ namespace WindowsFormsApp1
             firstOperand = Int32.Parse(display.Text);
             currentOperator = Operators.Divide;
             operatorChangeFlag = true;
+
+            //텍스트박스1
+            textBox1.Text += "/";
 
         }
 
@@ -104,20 +85,13 @@ namespace WindowsFormsApp1
             secondOperand = 0;
             currentOperator = Operators.None;
             display.Text = "0";
+
+            //텍스트박스1
+            textBox1.Clear();
+
         }
 
-        private void ButtonPoint_Click(object sender, EventArgs e)
-        {
-            if(operatorChangeFlag == true)
-            {
-                display.Text = "0."; 
-                operatorChangeFlag = false;
-            }
-            else if(display.Text.Contains(".") == false)
-            {
-                display.Text += ".";
-            }
-        }
+     
 
         private void ButtonZero_Click(object sender, EventArgs e)
         {
@@ -129,6 +103,9 @@ namespace WindowsFormsApp1
             string strNumber = display.Text += "0";
             int intNumber = Int32.Parse(strNumber);
             display.Text = intNumber.ToString();
+
+            //텍스트박스1
+            textBox1.Text += "0";
         }
 
         private void ButtonOne_Click(object sender, EventArgs e)
@@ -142,6 +119,9 @@ namespace WindowsFormsApp1
            String strNumber = display.Text += "1";
             int intNumber = Int32.Parse(strNumber);
             display.Text = intNumber.ToString();
+
+            //텍스트박스1
+            textBox1.Text += "1";
         }
 
         private void ButtonTwo_Click(object sender, EventArgs e)
@@ -155,6 +135,9 @@ namespace WindowsFormsApp1
             int intNumber = Int32.Parse(strNumber);
             display.Text = intNumber.ToString();
 
+            //텍스트박스1
+            textBox1.Text += "2";
+
         }
 
         private void ButtonThree_Click(object sender, EventArgs e)
@@ -167,6 +150,9 @@ namespace WindowsFormsApp1
             string strNumber = display.Text += "3";
             int intNumber = Int32.Parse(strNumber);
             display.Text = intNumber.ToString();
+            
+            //텍스트박스1
+            textBox1.Text += "3";
 
         }
 
@@ -180,6 +166,9 @@ namespace WindowsFormsApp1
             string strNumber = display.Text += "4";
             int intNumber = Int32.Parse(strNumber);
             display.Text = intNumber.ToString();
+           
+            //텍스트박스1
+            textBox1.Text += "4";
 
         }
 
@@ -193,6 +182,9 @@ namespace WindowsFormsApp1
             string strNumber = display.Text += "5";
             int intNumber = Int32.Parse(strNumber);
             display.Text = intNumber.ToString();
+            
+            //텍스트박스1
+            textBox1.Text += "5";
 
         }
 
@@ -206,6 +198,9 @@ namespace WindowsFormsApp1
             string strNumber = display.Text += "6";
             int intNumber = Int32.Parse(strNumber);
             display.Text = intNumber.ToString();
+            
+            //텍스트박스1
+            textBox1.Text += "6";
 
         }
 
@@ -219,6 +214,9 @@ namespace WindowsFormsApp1
             string strNumber = display.Text += "7";
             int intNumber = Int32.Parse(strNumber);
             display.Text = intNumber.ToString();
+            
+            //텍스트박스1
+            textBox1.Text += "7";
 
         }
 
@@ -232,6 +230,9 @@ namespace WindowsFormsApp1
             string strNumber = display.Text += "8";
             int intNumber = Int32.Parse(strNumber);
             display.Text = intNumber.ToString();
+            
+            //텍스트박스1
+            textBox1.Text += "8";
 
         }
 
@@ -245,21 +246,21 @@ namespace WindowsFormsApp1
             string strNumber = display.Text += "9";
             int intNumber = Int32.Parse(strNumber);
             display.Text = intNumber.ToString();
+            
+            //텍스트박스1
+            textBox1.Text += "9";
 
         }
 
-        private void display_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
 
 
 
-
+        // 기록 남기기
         private void ButtonRecord_Click(object sender, EventArgs e)
         {
-            ChildForm childForm = new ChildForm(display.Text);
+            ChildForm childForm = new ChildForm(txtMsg);
 
             childForm.Owner = this;
 
@@ -299,8 +300,39 @@ namespace WindowsFormsApp1
                     display.Text = firstOperand.ToString();
                 }
             }
-    
+            //텍스트박스1
+           
 
+            txtMsg += textBox1.Text + "="  + display.Text + "\r\n";
+          
+
+              try
+              {
+                  DataTable dt = new DataTable();
+                  var a = dt.Compute(textBox1.Text, "");
+                  textBox1.Text = a.ToString();
+
+              } catch (Exception e1)
+              {
+                  MessageBox.Show(e1.Message);
+              }
+
+
+        }
+
+        private void btnback_Click(object sender, EventArgs e)
+        {   //텍스트박스1
+            if (textBox1.Text.Length > 0)
+            {
+                String text = textBox1.Text;
+                textBox1.Text = text.Substring(0, text.Length - 1);
+            }
+
+            if(display.Text.Length > 0)
+            {
+                String text = display.Text;
+                display.Text = text.Substring(0, text.Length - 1);
+            }
         }
     }
 }

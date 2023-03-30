@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.display = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.ButtonAdd = new System.Windows.Forms.Button();
+            this.ButtonResult = new System.Windows.Forms.Button();
             this.ButtonZero = new System.Windows.Forms.Button();
             this.ButtonAllClear = new System.Windows.Forms.Button();
             this.ButtonSubtract = new System.Windows.Forms.Button();
@@ -45,24 +47,22 @@
             this.ButtonNine = new System.Windows.Forms.Button();
             this.ButtonEight = new System.Windows.Forms.Button();
             this.ButtonSeven = new System.Windows.Forms.Button();
-            this.ButtonPoint = new System.Windows.Forms.Button();
-            this.ButtonResult = new System.Windows.Forms.Button();
             this.ButtonRecord = new System.Windows.Forms.Button();
-            this.savela = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.btnback = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // display
             // 
-            this.display.Dock = System.Windows.Forms.DockStyle.Top;
             this.display.Font = new System.Drawing.Font("굴림", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.display.Location = new System.Drawing.Point(0, 0);
+            this.display.Location = new System.Drawing.Point(3, 46);
             this.display.Name = "display";
-            this.display.Size = new System.Drawing.Size(682, 59);
+            this.display.Size = new System.Drawing.Size(682, 49);
             this.display.TabIndex = 1;
             this.display.Text = "0";
             this.display.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.display.Click += new System.EventHandler(this.display_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -72,6 +72,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.Controls.Add(this.ButtonAdd, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.ButtonResult, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.ButtonZero, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.ButtonAllClear, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.ButtonSubtract, 3, 2);
@@ -86,7 +87,6 @@
             this.tableLayoutPanel1.Controls.Add(this.ButtonNine, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.ButtonEight, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.ButtonSeven, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.ButtonPoint, 2, 3);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 150);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
@@ -108,6 +108,17 @@
             this.ButtonAdd.Text = "＋";
             this.ButtonAdd.UseVisualStyleBackColor = true;
             this.ButtonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
+            // 
+            // ButtonResult
+            // 
+            this.ButtonResult.Font = new System.Drawing.Font("굴림", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ButtonResult.Location = new System.Drawing.Point(341, 330);
+            this.ButtonResult.Name = "ButtonResult";
+            this.ButtonResult.Size = new System.Drawing.Size(163, 104);
+            this.ButtonResult.TabIndex = 4;
+            this.ButtonResult.Text = "=";
+            this.ButtonResult.UseVisualStyleBackColor = true;
+            this.ButtonResult.Click += new System.EventHandler(this.ButtonResult_Click_1);
             // 
             // ButtonZero
             // 
@@ -263,59 +274,51 @@
             this.ButtonSeven.UseVisualStyleBackColor = true;
             this.ButtonSeven.Click += new System.EventHandler(this.ButtonSeven_Click);
             // 
-            // ButtonPoint
-            // 
-            this.ButtonPoint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ButtonPoint.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonPoint.Font = new System.Drawing.Font("굴림", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ButtonPoint.Location = new System.Drawing.Point(341, 330);
-            this.ButtonPoint.Name = "ButtonPoint";
-            this.ButtonPoint.Size = new System.Drawing.Size(163, 104);
-            this.ButtonPoint.TabIndex = 16;
-            this.ButtonPoint.Text = ".";
-            this.ButtonPoint.UseVisualStyleBackColor = true;
-            // 
-            // ButtonResult
-            // 
-            this.ButtonResult.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ButtonResult.Font = new System.Drawing.Font("굴림", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ButtonResult.Location = new System.Drawing.Point(0, 593);
-            this.ButtonResult.Name = "ButtonResult";
-            this.ButtonResult.Size = new System.Drawing.Size(682, 104);
-            this.ButtonResult.TabIndex = 4;
-            this.ButtonResult.Text = "=";
-            this.ButtonResult.UseVisualStyleBackColor = true;
-            this.ButtonResult.Click += new System.EventHandler(this.ButtonResult_Click_1);
-            // 
             // ButtonRecord
             // 
             this.ButtonRecord.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ButtonRecord.Location = new System.Drawing.Point(516, 62);
+            this.ButtonRecord.Location = new System.Drawing.Point(516, 98);
             this.ButtonRecord.Name = "ButtonRecord";
-            this.ButtonRecord.Size = new System.Drawing.Size(166, 85);
+            this.ButtonRecord.Size = new System.Drawing.Size(166, 49);
             this.ButtonRecord.TabIndex = 5;
             this.ButtonRecord.Text = "RECORD";
             this.ButtonRecord.UseVisualStyleBackColor = true;
             this.ButtonRecord.Click += new System.EventHandler(this.ButtonRecord_Click);
             // 
-            // savela
+            // textBox1
             // 
-            this.savela.AutoSize = true;
-            this.savela.Location = new System.Drawing.Point(147, 53);
-            this.savela.Name = "savela";
-            this.savela.Size = new System.Drawing.Size(45, 15);
-            this.savela.TabIndex = 6;
-            this.savela.Text = "label1";
-            this.savela.Visible = false;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("굴림", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox1.Location = new System.Drawing.Point(347, 5);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(341, 38);
+            this.textBox1.TabIndex = 6;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // btnback
+            // 
+            this.btnback.Font = new System.Drawing.Font("굴림", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnback.Location = new System.Drawing.Point(347, 98);
+            this.btnback.Name = "btnback";
+            this.btnback.Size = new System.Drawing.Size(170, 49);
+            this.btnback.TabIndex = 7;
+            this.btnback.Text = "Delete";
+            this.btnback.UseVisualStyleBackColor = true;
+            this.btnback.Click += new System.EventHandler(this.btnback_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 697);
-            this.Controls.Add(this.savela);
+            this.ClientSize = new System.Drawing.Size(682, 590);
+            this.Controls.Add(this.btnback);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.ButtonRecord);
-            this.Controls.Add(this.ButtonResult);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.display);
             this.Name = "Form1";
@@ -346,10 +349,11 @@
         private System.Windows.Forms.Button ButtonNine;
         private System.Windows.Forms.Button ButtonEight;
         private System.Windows.Forms.Button ButtonSeven;
-        private System.Windows.Forms.Button ButtonPoint;
         private System.Windows.Forms.Button ButtonResult;
         private System.Windows.Forms.Button ButtonRecord;
-        private System.Windows.Forms.Label savela;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.Button btnback;
     }
 }
 
