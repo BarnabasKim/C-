@@ -27,6 +27,7 @@ namespace WindowsFormsApp1
         int firstOperand = 0;
         int secondOperand = 0;
         private string txtMsg;
+        public bool isNewNum = true;
        
         public Form1()
         {
@@ -122,6 +123,23 @@ namespace WindowsFormsApp1
 
             //텍스트박스1
             textBox1.Text += "1";
+
+            if (isNewNum)
+            {
+                textBox1.Text = firstOperand.ToString();
+                display.Text = firstOperand.ToString();
+                isNewNum = false;
+            }
+            else if (textBox1.Text == "0")
+            {
+                textBox1.Text = firstOperand.ToString();
+            }
+            else
+            {
+                textBox1.Text = firstOperand.ToString();
+            }
+
+            
         }
 
         private void ButtonTwo_Click(object sender, EventArgs e)
@@ -132,7 +150,7 @@ namespace WindowsFormsApp1
                 operatorChangeFlag = false;
             }
             string strNumber = display.Text += "2";
-            int intNumber = Int32.Parse(strNumber);
+            ulong intNumber = UInt64.Parse(strNumber);
             display.Text = intNumber.ToString();
 
             //텍스트박스1
@@ -273,6 +291,7 @@ namespace WindowsFormsApp1
         private void ButtonResult_Click_1(object sender, EventArgs e)
         {
             secondOperand = Int32.Parse(display.Text);
+            isNewNum = true;
             if (currentOperator == Operators.Add)
             {
                 firstOperand += secondOperand;
@@ -300,16 +319,19 @@ namespace WindowsFormsApp1
                     display.Text = firstOperand.ToString();
                 }
             }
+          
+           
             //텍스트박스1
            
 
             txtMsg += textBox1.Text + "="  + display.Text + "\r\n";
           
+          
 
               try
               {
                   DataTable dt = new DataTable();
-                  var a = dt.Compute(textBox1.Text, "");
+                  var a = dt.Compute(textBox1.Text,"");
                   textBox1.Text = a.ToString();
 
               } catch (Exception e1)

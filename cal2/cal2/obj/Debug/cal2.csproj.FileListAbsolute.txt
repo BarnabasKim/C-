@@ -1,0 +1,11 @@
+D:\test\cal2\cal2\bin\Debug\cal2.exe.config
+D:\test\cal2\cal2\bin\Debug\cal2.exe
+D:\test\cal2\cal2\bin\Debug\cal2.pdb
+D:\test\cal2\cal2\obj\Debug\cal2.csproj.AssemblyReference.cache
+D:\test\cal2\cal2\obj\Debug\cal2.csproj.SuggestedBindingRedirects.cache
+D:\test\cal2\cal2\obj\Debug\cal2.Form1.resources
+D:\test\cal2\cal2\obj\Debug\cal2.Properties.Resources.resources
+D:\test\cal2\cal2\obj\Debug\cal2.csproj.GenerateResource.cache
+D:\test\cal2\cal2\obj\Debug\cal2.csproj.CoreCompileInputs.cache
+D:\test\cal2\cal2\obj\Debug\cal2.exe
+D:\test\cal2\cal2\obj\Debug\cal2.pdb
