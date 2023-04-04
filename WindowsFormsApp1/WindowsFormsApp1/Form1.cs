@@ -27,7 +27,7 @@ namespace WindowsFormsApp1
         int firstOperand = 0;
         int secondOperand = 0;
         private string txtMsg;
-        public bool isNewNum = true;
+        public string recentCal = "+";
        
         public Form1()
         {
@@ -88,7 +88,7 @@ namespace WindowsFormsApp1
             display.Text = "0";
 
             //텍스트박스1
-            textBox1.Clear();
+            textBox1.Text ="0";
 
         }
 
@@ -124,20 +124,18 @@ namespace WindowsFormsApp1
             //텍스트박스1
             textBox1.Text += "1";
 
-            if (isNewNum)
-            {
-                textBox1.Text = firstOperand.ToString();
-                display.Text = firstOperand.ToString();
-                isNewNum = false;
+
+            if (display.Text.Contains("=")){
+                display.Text = "";
+                display.Text += "1";
+                textBox1.Text = "";
+                textBox1.Text += "1";
             }
-            else if (textBox1.Text == "0")
-            {
-                textBox1.Text = firstOperand.ToString();
-            }
-            else
-            {
-                textBox1.Text = firstOperand.ToString();
-            }
+
+
+        
+
+          
 
             
         }
@@ -291,7 +289,7 @@ namespace WindowsFormsApp1
         private void ButtonResult_Click_1(object sender, EventArgs e)
         {
             secondOperand = Int32.Parse(display.Text);
-            isNewNum = true;
+            
             if (currentOperator == Operators.Add)
             {
                 firstOperand += secondOperand;
@@ -319,10 +317,10 @@ namespace WindowsFormsApp1
                     display.Text = firstOperand.ToString();
                 }
             }
-          
-           
+
+
             //텍스트박스1
-           
+          
 
             txtMsg += textBox1.Text + "="  + display.Text + "\r\n";
           

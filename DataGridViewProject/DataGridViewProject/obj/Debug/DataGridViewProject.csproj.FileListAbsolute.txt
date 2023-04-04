@@ -1,0 +1,12 @@
+D:\test\DataGridViewProject\DataGridViewProject\bin\Debug\DataGridViewProject.exe.config
+D:\test\DataGridViewProject\DataGridViewProject\bin\Debug\DataGridViewProject.exe
+D:\test\DataGridViewProject\DataGridViewProject\bin\Debug\DataGridViewProject.pdb
+D:\test\DataGridViewProject\DataGridViewProject\obj\Debug\DataGridViewProject.csproj.AssemblyReference.cache
+D:\test\DataGridViewProject\DataGridViewProject\obj\Debug\DataGridViewProject.csproj.SuggestedBindingRedirects.cache
+D:\test\DataGridViewProject\DataGridViewProject\obj\Debug\DataGridViewProject.Form1.resources
+D:\test\DataGridViewProject\DataGridViewProject\obj\Debug\DataGridViewProject.Properties.Resources.resources
+D:\test\DataGridViewProject\DataGridViewProject\obj\Debug\DataGridViewProject.csproj.GenerateResource.cache
+D:\test\DataGridViewProject\DataGridViewProject\obj\Debug\DataGridViewProject.csproj.CoreCompileInputs.cache
+D:\test\DataGridViewProject\DataGridViewProject\obj\Debug\DataGridViewProject.exe
+D:\test\DataGridViewProject\DataGridViewProject\obj\Debug\DataGridViewProject.pdb
+D:\test\DataGridViewProject\DataGridViewProject\obj\Debug\DataGridViewProject.Form2.resources

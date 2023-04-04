@@ -214,6 +214,7 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "원단사양";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -227,6 +228,7 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "제품사양";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -239,6 +241,7 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "요일";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -251,6 +254,7 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "부품";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -263,6 +267,7 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "차종";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Carlb1
             // 
@@ -314,6 +319,8 @@
             this.Carbtn8.Text = "페라리";
             this.Carbtn8.UseVisualStyleBackColor = false;
             this.Carbtn8.Click += new System.EventHandler(this.CarBtn1_Click);
+            this.Carbtn8.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.Carbtn8.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // Carbtn7
             // 
@@ -328,6 +335,8 @@
             this.Carbtn7.Text = "쏘나타";
             this.Carbtn7.UseVisualStyleBackColor = false;
             this.Carbtn7.Click += new System.EventHandler(this.CarBtn1_Click);
+            this.Carbtn7.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.Carbtn7.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // Carbtn6
             // 
@@ -342,6 +351,8 @@
             this.Carbtn6.Text = "아반떼";
             this.Carbtn6.UseVisualStyleBackColor = false;
             this.Carbtn6.Click += new System.EventHandler(this.CarBtn1_Click);
+            this.Carbtn6.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.Carbtn6.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // Carbtn5
             // 
@@ -356,6 +367,8 @@
             this.Carbtn5.Text = "레이";
             this.Carbtn5.UseVisualStyleBackColor = false;
             this.Carbtn5.Click += new System.EventHandler(this.CarBtn1_Click);
+            this.Carbtn5.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.Carbtn5.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // Carbtn4
             // 
@@ -370,6 +383,8 @@
             this.Carbtn4.Text = "스파크";
             this.Carbtn4.UseVisualStyleBackColor = false;
             this.Carbtn4.Click += new System.EventHandler(this.CarBtn1_Click);
+            this.Carbtn4.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.Carbtn4.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // Carbtn3
             // 
@@ -384,6 +399,8 @@
             this.Carbtn3.Text = "모닝";
             this.Carbtn3.UseVisualStyleBackColor = false;
             this.Carbtn3.Click += new System.EventHandler(this.CarBtn1_Click);
+            this.Carbtn3.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.Carbtn3.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // Carbtn2
             // 
@@ -398,6 +415,8 @@
             this.Carbtn2.Text = "투싼";
             this.Carbtn2.UseVisualStyleBackColor = false;
             this.Carbtn2.Click += new System.EventHandler(this.CarBtn1_Click);
+            this.Carbtn2.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.Carbtn2.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // CarBtn1
             // 
@@ -412,6 +431,8 @@
             this.CarBtn1.Text = "싼타페";
             this.CarBtn1.UseVisualStyleBackColor = false;
             this.CarBtn1.Click += new System.EventHandler(this.CarBtn1_Click);
+            this.CarBtn1.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.CarBtn1.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // tablePartLayout
             // 
@@ -451,6 +472,8 @@
             this.btnPart8.Text = "에어컨";
             this.btnPart8.UseVisualStyleBackColor = false;
             this.btnPart8.Click += new System.EventHandler(this.PartBtn_Click);
+            this.btnPart8.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.btnPart8.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // btnPart7
             // 
@@ -465,6 +488,8 @@
             this.btnPart7.Text = "범퍼";
             this.btnPart7.UseVisualStyleBackColor = false;
             this.btnPart7.Click += new System.EventHandler(this.PartBtn_Click);
+            this.btnPart7.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.btnPart7.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // btnPart6
             // 
@@ -479,6 +504,8 @@
             this.btnPart6.Text = "냉각수";
             this.btnPart6.UseVisualStyleBackColor = false;
             this.btnPart6.Click += new System.EventHandler(this.PartBtn_Click);
+            this.btnPart6.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.btnPart6.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // btnPart5
             // 
@@ -493,6 +520,8 @@
             this.btnPart5.Text = "사이드미러";
             this.btnPart5.UseVisualStyleBackColor = false;
             this.btnPart5.Click += new System.EventHandler(this.PartBtn_Click);
+            this.btnPart5.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.btnPart5.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // btnPart4
             // 
@@ -507,6 +536,8 @@
             this.btnPart4.Text = "바퀴";
             this.btnPart4.UseVisualStyleBackColor = false;
             this.btnPart4.Click += new System.EventHandler(this.PartBtn_Click);
+            this.btnPart4.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.btnPart4.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // btnPart3
             // 
@@ -521,6 +552,8 @@
             this.btnPart3.Text = "브레이크";
             this.btnPart3.UseVisualStyleBackColor = false;
             this.btnPart3.Click += new System.EventHandler(this.PartBtn_Click);
+            this.btnPart3.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.btnPart3.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // btnPart2
             // 
@@ -535,6 +568,8 @@
             this.btnPart2.Text = "기어";
             this.btnPart2.UseVisualStyleBackColor = false;
             this.btnPart2.Click += new System.EventHandler(this.PartBtn_Click);
+            this.btnPart2.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.btnPart2.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // btnPart1
             // 
@@ -549,6 +584,8 @@
             this.btnPart1.Text = "엔진";
             this.btnPart1.UseVisualStyleBackColor = false;
             this.btnPart1.Click += new System.EventHandler(this.PartBtn_Click);
+            this.btnPart1.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.btnPart1.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // OneweekTableLayout
             // 
@@ -587,6 +624,8 @@
             this.btnDay7.Text = "일요일";
             this.btnDay7.UseVisualStyleBackColor = false;
             this.btnDay7.Click += new System.EventHandler(this.WeekBtn_Click);
+            this.btnDay7.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.btnDay7.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // btnDay6
             // 
@@ -601,6 +640,8 @@
             this.btnDay6.Text = "토요일";
             this.btnDay6.UseVisualStyleBackColor = false;
             this.btnDay6.Click += new System.EventHandler(this.WeekBtn_Click);
+            this.btnDay6.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.btnDay6.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // btnDay5
             // 
@@ -615,6 +656,8 @@
             this.btnDay5.Text = "금요일";
             this.btnDay5.UseVisualStyleBackColor = false;
             this.btnDay5.Click += new System.EventHandler(this.WeekBtn_Click);
+            this.btnDay5.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.btnDay5.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // btnDay4
             // 
@@ -629,6 +672,8 @@
             this.btnDay4.Text = "목요일";
             this.btnDay4.UseVisualStyleBackColor = false;
             this.btnDay4.Click += new System.EventHandler(this.WeekBtn_Click);
+            this.btnDay4.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.btnDay4.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // btnDay3
             // 
@@ -643,6 +688,8 @@
             this.btnDay3.Text = "수요일";
             this.btnDay3.UseVisualStyleBackColor = false;
             this.btnDay3.Click += new System.EventHandler(this.WeekBtn_Click);
+            this.btnDay3.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.btnDay3.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // btnDay2
             // 
@@ -657,6 +704,8 @@
             this.btnDay2.Text = "화요일";
             this.btnDay2.UseVisualStyleBackColor = false;
             this.btnDay2.Click += new System.EventHandler(this.WeekBtn_Click);
+            this.btnDay2.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.btnDay2.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // btnDay1
             // 
@@ -671,6 +720,8 @@
             this.btnDay1.Text = "월요일";
             this.btnDay1.UseVisualStyleBackColor = false;
             this.btnDay1.Click += new System.EventHandler(this.WeekBtn_Click);
+            this.btnDay1.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.btnDay1.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // tableLayoutSpec
             // 
@@ -708,6 +759,8 @@
             this.button1.Text = "Ryzen9";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.SpecBtn_Click);
+            this.button1.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.button1.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // button2
             // 
@@ -722,6 +775,8 @@
             this.button2.Text = "Ryzen PRO";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.SpecBtn_Click);
+            this.button2.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.button2.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // button3
             // 
@@ -736,6 +791,8 @@
             this.button3.Text = "Ryzen360";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.SpecBtn_Click);
+            this.button3.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.button3.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // button5
             // 
@@ -750,6 +807,8 @@
             this.button5.Text = "intel Core";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.SpecBtn_Click);
+            this.button5.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.button5.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // button6
             // 
@@ -815,6 +874,8 @@
             this.button9.Text = "오염방지";
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.SpecBtn_Click2);
+            this.button9.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.button9.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // button10
             // 
@@ -829,6 +890,8 @@
             this.button10.Text = "내후성";
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.SpecBtn_Click2);
+            this.button10.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.button10.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // button11
             // 
@@ -843,6 +906,8 @@
             this.button11.Text = "향진균";
             this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.SpecBtn_Click2);
+            this.button11.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.button11.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // button12
             // 
@@ -857,6 +922,8 @@
             this.button12.Text = "방수원단";
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.SpecBtn_Click2);
+            this.button12.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.button12.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // button13
             // 
@@ -871,6 +938,8 @@
             this.button13.Text = "엠보싱";
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.SpecBtn_Click2);
+            this.button13.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.button13.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // button14
             // 
@@ -885,6 +954,8 @@
             this.button14.Text = "직조 섬유";
             this.button14.UseVisualStyleBackColor = false;
             this.button14.Click += new System.EventHandler(this.SpecBtn_Click2);
+            this.button14.MouseLeave += new System.EventHandler(this.Btn_MouseLeave);
+            this.button14.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // button4
             // 
@@ -898,12 +969,14 @@
             this.button4.Text = "초기화";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.MouseLeave += new System.EventHandler(this.Btn_MouseHover);
+            this.button4.MouseHover += new System.EventHandler(this.Btn_MouseHover);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(725, 552);
+            this.ClientSize = new System.Drawing.Size(725, 564);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.tableLayoutSpec2);
             this.Controls.Add(this.tableLayoutSpec);

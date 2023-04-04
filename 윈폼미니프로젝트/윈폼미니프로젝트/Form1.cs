@@ -25,7 +25,17 @@ namespace 윈폼미니프로젝트
             tableLayoutSpec.Visible = false;
             tableLayoutSpec2.Visible = false;
 
-
+            /*InitEvent();*//*
+            List<string> list = new List<string>();
+            list.Add("엠보싱");
+            list.Add("섬유");
+            for (int i = 0; i< list.Count; i++)
+            {
+                Button button = new Button();
+                button.Text = list[i];
+                flowLayoutPanel1.Controls.Add(button);
+                
+            }*/
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -134,6 +144,105 @@ namespace 윈폼미니프로젝트
             label3.BackColor = Color.DarkGray;
             label4.BackColor = Color.DarkGray;
             label5.BackColor = Color.DarkGray;
+        }
+
+        private void Btn_MouseHover(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            btn.BackColor = Color.Blue;
+        }
+
+        private void Btn_MouseLeave(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            btn.BackColor = Color.Gray;
+        }
+
+        private void InitEvent()
+        {
+            
+            this.MouseHover += Btn_MouseHover;
+            this.MouseLeave += Btn_MouseLeave;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+            CarTableLayout.Visible = true;
+            tablePartLayout.Visible = false;
+            OneweekTableLayout.Visible = false;
+            tableLayoutSpec.Visible = false;
+            tableLayoutSpec2.Visible = false;
+            label1.BackColor = Color.BlueViolet;
+            label2.BackColor = Color.DarkGray;
+            label3.BackColor = Color.DarkGray;
+            label4.BackColor = Color.DarkGray;
+            label5.BackColor = Color.DarkGray;
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+            CarTableLayout.Visible = false;
+            tablePartLayout.Visible = true;
+            OneweekTableLayout.Visible = false;
+            tableLayoutSpec.Visible = false;
+            tableLayoutSpec2.Visible = false;
+            label1.BackColor = Color.DarkGray;
+            label2.BackColor = Color.BlueViolet;
+            label3.BackColor = Color.DarkGray;
+            label4.BackColor = Color.DarkGray;
+            label5.BackColor = Color.DarkGray;
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+            CarTableLayout.Visible = false;
+            tablePartLayout.Visible = false;
+            OneweekTableLayout.Visible = true;
+            tableLayoutSpec.Visible = false;
+            tableLayoutSpec2.Visible = false;
+            label1.BackColor = Color.DarkGray;
+            label2.BackColor = Color.DarkGray;
+            label3.BackColor = Color.BlueViolet;
+            label4.BackColor = Color.DarkGray;
+            label5.BackColor = Color.DarkGray;
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+            CarTableLayout.Visible = false;
+            tablePartLayout.Visible = false;
+            OneweekTableLayout.Visible = false;
+            tableLayoutSpec.Visible = true;
+            tableLayoutSpec2.Visible = false;
+            label1.BackColor = Color.DarkGray;
+            label2.BackColor = Color.DarkGray;
+            label3.BackColor = Color.DarkGray;
+            label4.BackColor = Color.BlueViolet;
+            label5.BackColor = Color.DarkGray;
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+            CarTableLayout.Visible = false;
+            tablePartLayout.Visible = false;
+            OneweekTableLayout.Visible = false;
+            tableLayoutSpec.Visible = false;
+            tableLayoutSpec2.Visible = true;
+            label1.BackColor = Color.DarkGray;
+            label2.BackColor = Color.DarkGray;
+            label3.BackColor = Color.DarkGray;
+            label4.BackColor = Color.DarkGray;
+            label5.BackColor = Color.BlueViolet;
+
         }
     }
 }
