@@ -1,0 +1,11 @@
+D:\test\study_Enum\study_Enum\bin\Debug\study_Enum.exe.config
+D:\test\study_Enum\study_Enum\bin\Debug\study_Enum.exe
+D:\test\study_Enum\study_Enum\bin\Debug\study_Enum.pdb
+D:\test\study_Enum\study_Enum\obj\Debug\study_Enum.csproj.AssemblyReference.cache
+D:\test\study_Enum\study_Enum\obj\Debug\study_Enum.csproj.SuggestedBindingRedirects.cache
+D:\test\study_Enum\study_Enum\obj\Debug\study_Enum.Form1.resources
+D:\test\study_Enum\study_Enum\obj\Debug\study_Enum.Properties.Resources.resources
+D:\test\study_Enum\study_Enum\obj\Debug\study_Enum.csproj.GenerateResource.cache
+D:\test\study_Enum\study_Enum\obj\Debug\study_Enum.csproj.CoreCompileInputs.cache
+D:\test\study_Enum\study_Enum\obj\Debug\study_Enum.exe
+D:\test\study_Enum\study_Enum\obj\Debug\study_Enum.pdb

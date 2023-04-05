@@ -17,12 +17,14 @@ namespace DataGridViewProject
         List<Food> _chineseFoodList = new List<Food>();
         List<Food> _westernFoodList = new List<Food>();
 
+        
+
         public Form1()
         {
             InitializeComponent();
             Form1_Load();
+            //Form2 form2 = new Form2(FooddataGridView,dataGridView1,a);
 
-            
 
         }
 
@@ -86,12 +88,21 @@ namespace DataGridViewProject
 
 
         }
-
+       
         private void FooddataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataGridView grid = sender as DataGridView; 
+            if (e.ColumnIndex == 0 && e.RowIndex >= 0)
+            {
+                DataGridViewRow selectedRow = FooddataGridView.Rows[e.RowIndex];
+                string name = selectedRow.Cells[2].Value.ToString();
 
-            int curRow = e.1
+                Form2 form2 = new Form2(FooddataGridView, dataGridView1, name);
+                form2.ShowDialog();
+
+            }
+
         }
+
+        
     }
 }
