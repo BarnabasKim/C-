@@ -44,6 +44,21 @@ namespace DataGridViewProject
           
         }
 
-
+        private void numericUpDown_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if(MessageBox.Show("주문하시겠습니까?","주문수량",MessageBoxButtons.YesNo) == DialogResult
+                    .Yes)
+                {
+                    this.button1_Click(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("아니요");
+                }
+               
+            }
+        }
     }
 }

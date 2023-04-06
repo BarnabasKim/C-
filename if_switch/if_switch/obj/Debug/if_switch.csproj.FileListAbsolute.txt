@@ -1,0 +1,11 @@
+D:\test\if_switch\if_switch\bin\Debug\if_switch.exe.config
+D:\test\if_switch\if_switch\bin\Debug\if_switch.exe
+D:\test\if_switch\if_switch\bin\Debug\if_switch.pdb
+D:\test\if_switch\if_switch\obj\Debug\if_switch.csproj.AssemblyReference.cache
+D:\test\if_switch\if_switch\obj\Debug\if_switch.csproj.SuggestedBindingRedirects.cache
+D:\test\if_switch\if_switch\obj\Debug\if_switch.Form1.resources
+D:\test\if_switch\if_switch\obj\Debug\if_switch.Properties.Resources.resources
+D:\test\if_switch\if_switch\obj\Debug\if_switch.csproj.GenerateResource.cache
+D:\test\if_switch\if_switch\obj\Debug\if_switch.csproj.CoreCompileInputs.cache
+D:\test\if_switch\if_switch\obj\Debug\if_switch.exe
+D:\test\if_switch\if_switch\obj\Debug\if_switch.pdb

@@ -1,0 +1,11 @@
+D:\test\9_for_foreach\9_for_foreach\bin\Debug\9_for_foreach.exe.config
+D:\test\9_for_foreach\9_for_foreach\bin\Debug\9_for_foreach.exe
+D:\test\9_for_foreach\9_for_foreach\bin\Debug\9_for_foreach.pdb
+D:\test\9_for_foreach\9_for_foreach\obj\Debug\9_for_foreach.csproj.AssemblyReference.cache
+D:\test\9_for_foreach\9_for_foreach\obj\Debug\9_for_foreach.csproj.SuggestedBindingRedirects.cache
+D:\test\9_for_foreach\9_for_foreach\obj\Debug\_9_for_foreach.Form1.resources
+D:\test\9_for_foreach\9_for_foreach\obj\Debug\_9_for_foreach.Properties.Resources.resources
+D:\test\9_for_foreach\9_for_foreach\obj\Debug\9_for_foreach.csproj.GenerateResource.cache
+D:\test\9_for_foreach\9_for_foreach\obj\Debug\9_for_foreach.csproj.CoreCompileInputs.cache
+D:\test\9_for_foreach\9_for_foreach\obj\Debug\9_for_foreach.exe
+D:\test\9_for_foreach\9_for_foreach\obj\Debug\9_for_foreach.pdb

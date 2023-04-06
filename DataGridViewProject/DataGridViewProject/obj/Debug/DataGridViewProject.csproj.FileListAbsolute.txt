@@ -10,3 +10,7 @@ D:\test\DataGridViewProject\DataGridViewProject\obj\Debug\DataGridViewProject.cs
 D:\test\DataGridViewProject\DataGridViewProject\obj\Debug\DataGridViewProject.exe
 D:\test\DataGridViewProject\DataGridViewProject\obj\Debug\DataGridViewProject.pdb
 D:\test\DataGridViewProject\DataGridViewProject\obj\Debug\DataGridViewProject.Form2.resources
+D:\test\DataGridViewProject\DataGridViewProject\bin\Debug\PagedList.dll
+D:\test\DataGridViewProject\DataGridViewProject\bin\Debug\PagedList.xml
+D:\test\DataGridViewProject\DataGridViewProject\obj\Debug\DataGridViewProject.csproj.CopyComplete
+D:\test\DataGridViewProject\DataGridViewProject\obj\Debug\DataGridViewProject.Form3.resources

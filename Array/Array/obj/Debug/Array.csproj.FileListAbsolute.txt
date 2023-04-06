@@ -1,0 +1,11 @@
+D:\test\Array\Array\bin\Debug\Array.exe.config
+D:\test\Array\Array\bin\Debug\Array.exe
+D:\test\Array\Array\bin\Debug\Array.pdb
+D:\test\Array\Array\obj\Debug\Array.csproj.AssemblyReference.cache
+D:\test\Array\Array\obj\Debug\Array.csproj.SuggestedBindingRedirects.cache
+D:\test\Array\Array\obj\Debug\Array.Properties.Resources.resources
+D:\test\Array\Array\obj\Debug\Array.csproj.GenerateResource.cache
+D:\test\Array\Array\obj\Debug\Array.csproj.CoreCompileInputs.cache
+D:\test\Array\Array\obj\Debug\Array.exe
+D:\test\Array\Array\obj\Debug\Array.pdb
+D:\test\Array\Array\obj\Debug\ArrayTest.Form1.resources
