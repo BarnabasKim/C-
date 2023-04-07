@@ -1,0 +1,11 @@
+D:\test\WinForms_Paging\WinForms_Paging\bin\Debug\WinForms_Paging.exe.config
+D:\test\WinForms_Paging\WinForms_Paging\bin\Debug\WinForms_Paging.exe
+D:\test\WinForms_Paging\WinForms_Paging\bin\Debug\WinForms_Paging.pdb
+D:\test\WinForms_Paging\WinForms_Paging\obj\Debug\WinForms_Paging.csproj.AssemblyReference.cache
+D:\test\WinForms_Paging\WinForms_Paging\obj\Debug\WinForms_Paging.csproj.SuggestedBindingRedirects.cache
+D:\test\WinForms_Paging\WinForms_Paging\obj\Debug\WinForms_Paging.Form1.resources
+D:\test\WinForms_Paging\WinForms_Paging\obj\Debug\WinForms_Paging.Properties.Resources.resources
+D:\test\WinForms_Paging\WinForms_Paging\obj\Debug\WinForms_Paging.csproj.GenerateResource.cache
+D:\test\WinForms_Paging\WinForms_Paging\obj\Debug\WinForms_Paging.csproj.CoreCompileInputs.cache
+D:\test\WinForms_Paging\WinForms_Paging\obj\Debug\WinForms_Paging.exe
+D:\test\WinForms_Paging\WinForms_Paging\obj\Debug\WinForms_Paging.pdb

@@ -13,4 +13,3 @@ D:\test\DataGridViewProject\DataGridViewProject\obj\Debug\DataGridViewProject.Fo
 D:\test\DataGridViewProject\DataGridViewProject\bin\Debug\PagedList.dll
 D:\test\DataGridViewProject\DataGridViewProject\bin\Debug\PagedList.xml
 D:\test\DataGridViewProject\DataGridViewProject\obj\Debug\DataGridViewProject.csproj.CopyComplete
-D:\test\DataGridViewProject\DataGridViewProject\obj\Debug\DataGridViewProject.Form3.resources

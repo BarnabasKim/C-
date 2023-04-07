@@ -22,7 +22,7 @@ namespace DataGridViewProject
         int _totalPage; // 
         private List<Food> _currentList;
 
-        
+
 
         public Form1()
         {
@@ -30,6 +30,7 @@ namespace DataGridViewProject
             Form1_Load();
             //Form2 form2 = new Form2(FooddataGridView,dataGridView1,a);
             SetPaging();
+
 
         }
 
@@ -39,10 +40,15 @@ namespace DataGridViewProject
             int totalCount = _list.Count; // 전체 아이템 개수
             _totalPage = (int)Math.Ceiling(totalCount / (double)_pageSize); // 전체 페이지 개수 계산
 
-            if (_currentPage < 1)
+            if (_currentPage < 1) {
                 _currentPage = 1; // 현재 페이지가 1보다 작으면 1로 설정
+            }
             else if (_currentPage > _totalPage)
+            {
                 _currentPage = _totalPage; // 현재 페이지가 전체 페이지보다 크면 전체 페이지로 설정
+            }
+            Console.WriteLine(_totalPage);
+            Console.WriteLine("_currentpage :" + _currentPage);
 
             // 현재 페이지에 해당하는 아이템 리스트 추출
             _currentList = _list.Skip((_currentPage - 1) * _pageSize).Take(_pageSize).ToList();
@@ -59,8 +65,8 @@ namespace DataGridViewProject
             string[] data = { "전체", "한식", "중식", "양식" };
             comboBox1.Items.AddRange(data);
             comboBox1.SelectedIndex = 0;
-           
-            _koreanFoodList.Add(new Food("한식","비빔밥"));
+
+            _koreanFoodList.Add(new Food("한식", "비빔밥"));
             _koreanFoodList.Add(new Food("한식", "육개장"));
             _koreanFoodList.Add(new Food("한식", "부침개"));
             _koreanFoodList.Add(new Food("한식", "치킨"));
@@ -107,7 +113,7 @@ namespace DataGridViewProject
         //조회 버튼
         private void getFood_Click(object sender, EventArgs e)
         {
-            
+
             _list.Clear();
 
             if (comboBox1.SelectedIndex == 0) // 전체
@@ -154,7 +160,7 @@ namespace DataGridViewProject
 
 
         }
-       
+
         private void FooddataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == 0 && e.RowIndex >= 0)
@@ -184,21 +190,26 @@ namespace DataGridViewProject
         }
 
         //검색 기능 구현중
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            var bindingSouce = (BindingSource)FooddataGridView.DataSource;
-            var dataTable = (DataTable)bindingSouce.DataSource;
 
-            string searchText = textBox1.Text;
 
-            if (string.IsNullOrEmpty(searchText))
-            {
-                bindingSouce.Filter = "";
-            }
-            else
-            {
-                bindingSouce.Filter = string.Format("Name LIKE '%{0}%' OR Type LIKE '%{0}%'", searchText);
-            }
-        }
+        /* private void textBox1_TextChanged(object sender, EventArgs e)
+         {
+             var bindingSouce = (BindingSource)FooddataGridView.DataSource;
+             var dataTable = (DataTable)bindingSouce.DataSource;
+
+             string searchText = textBox1.Text;
+
+             if (string.IsNullOrEmpty(searchText))
+             {
+                 bindingSouce.Filter = "";
+             }
+             else
+             {
+                 bindingSouce.Filter = string.Format("Name LIKE '%{0}%' OR Type LIKE '%{0}%'", searchText);
+             }*/
+
+
+
+        // }
     }
 }
