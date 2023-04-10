@@ -1,0 +1,11 @@
+D:\test\Struct_Class\Struct_Class\bin\Debug\Struct_Class.exe.config
+D:\test\Struct_Class\Struct_Class\bin\Debug\Struct_Class.exe
+D:\test\Struct_Class\Struct_Class\bin\Debug\Struct_Class.pdb
+D:\test\Struct_Class\Struct_Class\obj\Debug\Struct_Class.csproj.AssemblyReference.cache
+D:\test\Struct_Class\Struct_Class\obj\Debug\Struct_Class.csproj.SuggestedBindingRedirects.cache
+D:\test\Struct_Class\Struct_Class\obj\Debug\Struct_Class.Form1.resources
+D:\test\Struct_Class\Struct_Class\obj\Debug\Struct_Class.Properties.Resources.resources
+D:\test\Struct_Class\Struct_Class\obj\Debug\Struct_Class.csproj.GenerateResource.cache
+D:\test\Struct_Class\Struct_Class\obj\Debug\Struct_Class.csproj.CoreCompileInputs.cache
+D:\test\Struct_Class\Struct_Class\obj\Debug\Struct_Class.exe
+D:\test\Struct_Class\Struct_Class\obj\Debug\Struct_Class.pdb

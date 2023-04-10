@@ -13,63 +13,87 @@ namespace WinForms_Paging
 {
     public partial class Form1 : Form
     {
-        private int currentPage = 1;
-        private int pageSize = 3;
-        private int totalPages = 5;
 
-        
+
+
+        private int currentPage = 1; // 현재 페이지
+        private int pageSize = 3; // 한 페이지에 보여줄 버튼의 개수
+        private int  _totalPages; // 총 페이지
+
+        List<Button> btns = new List<Button>();
         
 
         public Form1()
         {
             InitializeComponent();
+
+ 
+            //이벤트 추가전 
+      /*      for (int i = 0; i < 15; i++)
+            {
+                char c = (char)('A' + i); // 알파벳 문자 계산
+                btns.Add(new Button()
+                {
+                    Text = c.ToString(),
+                    BackColor = Color.Black,
+                    ForeColor = Color.White,
+                    Font = new Font("굴림", 16),
+                    Size = new Size(150, 80),
+ 
+                });
+
+            }*/
+        // 동적 버튼 이벤트 추가
+            for (int i = 0; i < 14; i++)
+            {
+                char c = (char)('A' + i); // 알파벳 문자 계산
+                Button btn = new Button();
+
+                btn.Text = c.ToString();
+                btn.BackColor = Color.Black;
+                btn.ForeColor = Color.White;
+                btn.Font = new Font("굴림", 16);
+                btn.Size = new Size(150, 80);
+ 
+                
+                btn.Click += new EventHandler(btnClick_Event);
+                btns.Add(btn);
+            }
+            
+            // 총 페이지 계산
+            _totalPages = (int)Math.Ceiling(btns.Count / (double)pageSize);
+
+            // 초기 버튼 설정
             Updateitems();
 
-            List<Button> btn = new List<Button>();
-            btn.Add(new Button() { Text = "A" });
-            btn.Add(new Button() { Text = "B" });
-            btn.Add(new Button() { Text = "C" });
-            btn.Add(new Button() { Text = "D" });
-            btn.Add(new Button() { Text = "E" });
-            btn.Add(new Button() { Text = "F" });
-            btn.Add(new Button() { Text = "G" });
-            btn.Add(new Button() { Text = "H" });
-            btn.Add(new Button() { Text = "I" });
-            btn.Add(new Button() { Text = "J" });
-        
-        
-        }
 
+        }
+        /// <summary>
+        /// pageBtns : 현재 페이지에 해당하는 버튼 추출
+        /// Skip 함수의 인덱스는 0부터 시작한다.
+        /// </summary>
         private void Updateitems()
         {
+            var pageBtns = btns.Skip((currentPage - 1) * pageSize).Take(pageSize).ToList();
+
             flowLayoutPanel1.Controls.Clear();
 
-
-            var items = GetItemsForPage(currentPage, pageSize);
-
-            flowLayoutPanel1.Controls.AddRange(items.ToArray());
-        }
-
-
-        private List<Button> GetItemsForPage(int page, int itemsPerPage)
-        {
-            var items = new List<Button>();
-
-            int startIndex = (page - 1) * itemsPerPage;
-            int endIndex = Math.Min(startIndex + itemsPerPage, flowLayoutPanel1.Controls.Count);
-
-            for (int i = startIndex; i < endIndex; i++)
+            foreach (var btn in pageBtns)
             {
-                items.Add((Button)flowLayoutPanel1.Controls[i]);
+                flowLayoutPanel1.Controls.Add(btn);
             }
 
-            return items;
-
+            // 현재 페이지와 총 페이지 출력
+            lblPaging.Text = $"{currentPage} / {_totalPages}";
         }
+
+
+   
+        
 
         private void btnNextPage_Click(object sender, EventArgs e)
         {
-            if (currentPage < totalPages)
+            if (currentPage < _totalPages)
             {
                 currentPage++;
                 Updateitems();
@@ -83,6 +107,13 @@ namespace WinForms_Paging
                 currentPage--;
                 Updateitems();
             }
+        }
+
+
+        private void btnClick_Event(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            MessageBox.Show(button.Text);
         }
 
 

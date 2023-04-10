@@ -1,0 +1,11 @@
+D:\test\while_do while\while_do while\bin\Debug\while_do while.exe.config
+D:\test\while_do while\while_do while\bin\Debug\while_do while.exe
+D:\test\while_do while\while_do while\bin\Debug\while_do while.pdb
+D:\test\while_do while\while_do while\obj\Debug\while_do while.csproj.AssemblyReference.cache
+D:\test\while_do while\while_do while\obj\Debug\while_do while.csproj.SuggestedBindingRedirects.cache
+D:\test\while_do while\while_do while\obj\Debug\while_do_while.Form1.resources
+D:\test\while_do while\while_do while\obj\Debug\while_do_while.Properties.Resources.resources
+D:\test\while_do while\while_do while\obj\Debug\while_do while.csproj.GenerateResource.cache
+D:\test\while_do while\while_do while\obj\Debug\while_do while.csproj.CoreCompileInputs.cache
+D:\test\while_do while\while_do while\obj\Debug\while_do while.exe
+D:\test\while_do while\while_do while\obj\Debug\while_do while.pdb
