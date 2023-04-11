@@ -38,6 +38,8 @@
             this.rdoPlayer2 = new System.Windows.Forms.RadioButton();
             this.lboxResult1 = new System.Windows.Forms.ListBox();
             this.lboxResult2 = new System.Windows.Forms.ListBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lboxNow = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pboxNone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxStar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxMoon)).BeginInit();
@@ -148,11 +150,33 @@
             this.lboxResult2.Size = new System.Drawing.Size(360, 154);
             this.lboxResult2.TabIndex = 9;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 530);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 19);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "- 상황판";
+            // 
+            // lboxNow
+            // 
+            this.lboxNow.BackColor = System.Drawing.Color.DimGray;
+            this.lboxNow.ForeColor = System.Drawing.SystemColors.Window;
+            this.lboxNow.FormattingEnabled = true;
+            this.lboxNow.ItemHeight = 15;
+            this.lboxNow.Location = new System.Drawing.Point(15, 561);
+            this.lboxNow.Name = "lboxNow";
+            this.lboxNow.Size = new System.Drawing.Size(739, 169);
+            this.lboxNow.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 520);
+            this.ClientSize = new System.Drawing.Size(781, 744);
+            this.Controls.Add(this.lboxNow);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.lboxResult2);
             this.Controls.Add(this.lboxResult1);
             this.Controls.Add(this.rdoPlayer2);
@@ -187,6 +211,8 @@
         private System.Windows.Forms.RadioButton rdoPlayer2;
         private System.Windows.Forms.ListBox lboxResult1;
         private System.Windows.Forms.ListBox lboxResult2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListBox lboxNow;
     }
 }
 
