@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
  
-using CPL = Class;
+using CPL = Struct_Class;
  
 namespace Struct_Class
 {

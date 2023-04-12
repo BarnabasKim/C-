@@ -1,0 +1,11 @@
+D:\test\WinFormDBTest2\WinFormDBTest2\bin\Debug\WinFormDBTest2.exe.config
+D:\test\WinFormDBTest2\WinFormDBTest2\bin\Debug\WinFormDBTest2.exe
+D:\test\WinFormDBTest2\WinFormDBTest2\bin\Debug\WinFormDBTest2.pdb
+D:\test\WinFormDBTest2\WinFormDBTest2\obj\Debug\WinFormDBTest2.csproj.AssemblyReference.cache
+D:\test\WinFormDBTest2\WinFormDBTest2\obj\Debug\WinFormDBTest2.csproj.SuggestedBindingRedirects.cache
+D:\test\WinFormDBTest2\WinFormDBTest2\obj\Debug\WinFormDBTest2.Form1.resources
+D:\test\WinFormDBTest2\WinFormDBTest2\obj\Debug\WinFormDBTest2.Properties.Resources.resources
+D:\test\WinFormDBTest2\WinFormDBTest2\obj\Debug\WinFormDBTest2.csproj.GenerateResource.cache
+D:\test\WinFormDBTest2\WinFormDBTest2\obj\Debug\WinFormDBTest2.csproj.CoreCompileInputs.cache
+D:\test\WinFormDBTest2\WinFormDBTest2\obj\Debug\WinFormDBTest2.exe
+D:\test\WinFormDBTest2\WinFormDBTest2\obj\Debug\WinFormDBTest2.pdb

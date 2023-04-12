@@ -1,0 +1,11 @@
+D:\test\Inheritance\Inheritance\bin\Debug\Inheritance.exe.config
+D:\test\Inheritance\Inheritance\bin\Debug\Inheritance.exe
+D:\test\Inheritance\Inheritance\bin\Debug\Inheritance.pdb
+D:\test\Inheritance\Inheritance\obj\Debug\Inheritance.csproj.AssemblyReference.cache
+D:\test\Inheritance\Inheritance\obj\Debug\Inheritance.csproj.SuggestedBindingRedirects.cache
+D:\test\Inheritance\Inheritance\obj\Debug\Inheritance.Form1.resources
+D:\test\Inheritance\Inheritance\obj\Debug\Inheritance.Properties.Resources.resources
+D:\test\Inheritance\Inheritance\obj\Debug\Inheritance.csproj.GenerateResource.cache
+D:\test\Inheritance\Inheritance\obj\Debug\Inheritance.csproj.CoreCompileInputs.cache
+D:\test\Inheritance\Inheritance\obj\Debug\Inheritance.exe
+D:\test\Inheritance\Inheritance\obj\Debug\Inheritance.pdb
