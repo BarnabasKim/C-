@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormDBTest2.cItem;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Button = System.Windows.Forms.Button;
 
@@ -15,7 +16,8 @@ namespace WinFormDBTest2
 {
     public partial class Form1 : Form
     {
-
+        cTestList cTestList = new cTestList();
+        cData cData = new cData();
         private int currentPage = 1;
         private int pageSize = 4;
         private int _totalPages;

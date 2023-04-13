@@ -5,17 +5,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Inheritance
+namespace _13.Inheritance
 {
-    internal class CBase
+    /// <summary>
+    /// 기본 클래스
+    /// </summary>
+    class CBase
     {
-        public string strName;
-        protected Pen _Pen;
+        public string strName;  // 이름
+        protected Pen _Pen;     // 펜
 
+        /// <summary>
+        /// 생성자
+        /// </summary>
         public CBase()
         {
             _Pen = new Pen(Color.Aqua);
         }
-
     }
 }
