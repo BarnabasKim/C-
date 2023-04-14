@@ -1,0 +1,11 @@
+D:\test\DB&ProcedureProject\DB&ProcedureProject\bin\Debug\DB&ProcedureProject.exe.config
+D:\test\DB&ProcedureProject\DB&ProcedureProject\bin\Debug\DB&ProcedureProject.exe
+D:\test\DB&ProcedureProject\DB&ProcedureProject\bin\Debug\DB&ProcedureProject.pdb
+D:\test\DB&ProcedureProject\DB&ProcedureProject\obj\Debug\DB&ProcedureProject.csproj.AssemblyReference.cache
+D:\test\DB&ProcedureProject\DB&ProcedureProject\obj\Debug\DB&ProcedureProject.csproj.SuggestedBindingRedirects.cache
+D:\test\DB&ProcedureProject\DB&ProcedureProject\obj\Debug\DB_ProcedureProject.Form1.resources
+D:\test\DB&ProcedureProject\DB&ProcedureProject\obj\Debug\DB_ProcedureProject.Properties.Resources.resources
+D:\test\DB&ProcedureProject\DB&ProcedureProject\obj\Debug\DB&ProcedureProject.csproj.GenerateResource.cache
+D:\test\DB&ProcedureProject\DB&ProcedureProject\obj\Debug\DB&ProcedureProject.csproj.CoreCompileInputs.cache
+D:\test\DB&ProcedureProject\DB&ProcedureProject\obj\Debug\DB&ProcedureProject.exe
+D:\test\DB&ProcedureProject\DB&ProcedureProject\obj\Debug\DB&ProcedureProject.pdb

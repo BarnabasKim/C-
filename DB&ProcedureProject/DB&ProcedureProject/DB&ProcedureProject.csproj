@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{69E0FDEA-4F17-4452-9256-2621FEC61EBC}</ProjectGuid>
+    <ProjectGuid>{C7426F8A-4493-441D-857F-02AB39306CB5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WinFormDBTest2</RootNamespace>
-    <AssemblyName>WinFormDBTest2</AssemblyName>
+    <RootNamespace>DB_ProcedureProject</RootNamespace>
+    <AssemblyName>DB&amp;ProcedureProject</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,9 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cData.cs" />
-    <Compile Include="cItem\cTestItem.cs" />
-    <Compile Include="cItem\cTestList.cs" />
+    <Compile Include="CProcedureTest1.cs" />
+    <Compile Include="cTestItem1.cs" />
+    <Compile Include="cTestList.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
