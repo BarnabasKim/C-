@@ -9,3 +9,4 @@ D:\test\DB&ProcedureProject\DB&ProcedureProject\obj\Debug\DB&ProcedureProject.cs
 D:\test\DB&ProcedureProject\DB&ProcedureProject\obj\Debug\DB&ProcedureProject.csproj.CoreCompileInputs.cache
 D:\test\DB&ProcedureProject\DB&ProcedureProject\obj\Debug\DB&ProcedureProject.exe
 D:\test\DB&ProcedureProject\DB&ProcedureProject\obj\Debug\DB&ProcedureProject.pdb
+D:\test\DB&ProcedureProject\DB&ProcedureProject\obj\Debug\DB_ProcedureProject.Form2.resources

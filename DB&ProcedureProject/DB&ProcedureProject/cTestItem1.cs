@@ -12,5 +12,7 @@ namespace DB_ProcedureProject
         public string COOK_CODE { get; set; }
         public string COOK_KATEGORIE { get; set; }
 
+        public int COOK_PRICE { get; set; }
+        public string COOK_NAME_CODE { get; set; }  
     }
 }
