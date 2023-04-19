@@ -28,44 +28,43 @@ namespace DB_ProcedureProject
             comboBox1.DataSource = list;
             comboBox1.DisplayMember = "COOK_KATEGORIE";
             
-         
-        }
 
+        }
         private void label2_Click(object sender, EventArgs e)
         {
             currentPage = 1;
+            
 
+            RefreshData();
+        }
+
+        public void RefreshData()
+        {
             CProcedureTest1 test = new CProcedureTest1();
             string category = comboBox1.Text;
             DataTable dt = test.GetCookList(category);
 
-     
 
-
+            // 가져온 데이터가 존재할 경우
             if (dt != null)
             {
-                dataGridView1.DataSource = dt;
+                dataGridView1.DataSource = dt;   // DataGridView에 데이터 표시
+                dataGridView1.Columns["코드"].Visible = false;
             }
 
-
             _totalPages = (int)Math.Ceiling((double)dt.Rows.Count / pageSize);
+            lblPaging.Text = $"{currentPage} / {_totalPages}";
 
-                lblPaging.Text = $"{currentPage} / {_totalPages}";
-
-
-                CreateButtons(dt);
-
-            
+            CreateButtons(dt);
         }
-    
+
+
+
 
         private void CreateButtons(DataTable dataTable)
         {
             flowLayoutPanel1.Controls.Clear();
             btns.Clear();
-
-
-
 
             int startIndex = (currentPage - 1) * pageSize;
             int endIndex = Math.Min(startIndex + pageSize, dataTable.Rows.Count);
@@ -118,14 +117,19 @@ namespace DB_ProcedureProject
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex < 0) return;
+
             CProcedureTest1 test = new CProcedureTest1();
          
             DataGridViewRow selectedRow = dataGridView1.Rows[e.RowIndex];
             int COOK_PRICE = Convert.ToInt32(selectedRow.Cells["가격"].Value);
             string COOK_NAME_CODE = selectedRow.Cells["코드"].Value.ToString();
 
-            Form2 form2 = new Form2(COOK_NAME_CODE, COOK_PRICE);
+            Form2 form2 = new Form2(COOK_NAME_CODE, COOK_PRICE,this);
             form2.ShowDialog();
         }
+
+    
+
     }
 }

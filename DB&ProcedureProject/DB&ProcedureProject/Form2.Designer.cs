@@ -40,25 +40,27 @@
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Font = new System.Drawing.Font("굴림", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(172, 70);
+            this.label1.Location = new System.Drawing.Point(197, 88);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 21);
+            this.label1.Size = new System.Drawing.Size(246, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "가격을 입력하세요";
             // 
             // txtCookPrice
             // 
             this.txtCookPrice.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtCookPrice.Location = new System.Drawing.Point(176, 94);
+            this.txtCookPrice.Location = new System.Drawing.Point(201, 118);
+            this.txtCookPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCookPrice.Name = "txtCookPrice";
-            this.txtCookPrice.Size = new System.Drawing.Size(190, 35);
+            this.txtCookPrice.Size = new System.Drawing.Size(217, 42);
             this.txtCookPrice.TabIndex = 1;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(176, 135);
+            this.btnCancel.Location = new System.Drawing.Point(201, 169);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 40);
+            this.btnCancel.Size = new System.Drawing.Size(86, 50);
             this.btnCancel.TabIndex = 2;
             this.btnCancel.Text = "취소";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -66,9 +68,10 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(291, 135);
+            this.btnSave.Location = new System.Drawing.Point(333, 169);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 40);
+            this.btnSave.Size = new System.Drawing.Size(86, 50);
             this.btnSave.TabIndex = 3;
             this.btnSave.Text = "저장";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -76,15 +79,17 @@
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(550, 177);
+            this.ClientSize = new System.Drawing.Size(629, 221);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtCookPrice);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form2";
             this.ResumeLayout(false);
             this.PerformLayout();

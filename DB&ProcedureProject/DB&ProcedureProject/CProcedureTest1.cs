@@ -35,15 +35,16 @@ namespace DB_ProcedureProject
 
                     connect.Open();
 
-
+                    // SqlDataAdapter를 이용해 결과 데이터를 DataSet으로 가져옴
                     SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                     DataSet ds = new DataSet();
 
                     adapter.Fill(ds);
-
+                   
+                    // 결과 데이터의 첫번째 테이블을 가져옴
                     DataTable dt = ds.Tables[0];
 
-
+                    // 리스트에 전체 카테고리 항목 추가
                     list.Add(new cTestItem1
                     {
                         COOK_CODE = COOK_CODE,
@@ -51,7 +52,7 @@ namespace DB_ProcedureProject
                     });
 
 
-
+                    // 결과 데이터에서 DataRow를 순회하며 리스트에 항목 추가
                     foreach (DataRow row in dt.Rows)
                     {
                         list.Add(new cTestItem1
@@ -84,15 +85,11 @@ namespace DB_ProcedureProject
 
                     SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                     DataTable dt = new DataTable();
-                    
-         /*           DataColumn COOK_NAME_CODE = new DataColumn("COOK_NAME_CODE");
-                    dt.Columns.Add(COOK_NAME_CODE);*/
+                   
                     
                     adapter.Fill(dt);
 
                     return dt;
-
-
                 }
             }
             catch (Exception ex)
@@ -108,16 +105,22 @@ namespace DB_ProcedureProject
             {
                 using (SqlConnection connect = new SqlConnection(connectionString))
                 {
+
+                    // 저장 프로시저 생성
                     SqlCommand cmd = new SqlCommand("SP_KDW_FOOD_UPDATE", connect);
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
-
-                    cmd.Parameters.Add(new SqlParameter("COOK_NAME_CODE", COOK_NAME_CODE));
-                    cmd.Parameters.Add(new SqlParameter("COOK_PRICE", COOK_PRICE));
+                    
+                    // 저장 프로시저의 매개변수 설정
+                    cmd.Parameters.Add(new SqlParameter("@COOK_PRICE", COOK_PRICE));
+                    cmd.Parameters.Add(new SqlParameter("@COOK_NAME_CODE", COOK_NAME_CODE));
+                  
 
                     connect.Open();
 
+                    // SqlCommand 객체를 실행하여 반환된 결과의 행 수를 반환
                     int result = cmd.ExecuteNonQuery();
 
+                    // 행이 한 개 이상이면 true 반환, 아니면 false 반환
                     if (result > 0)
                     {
                         return true;

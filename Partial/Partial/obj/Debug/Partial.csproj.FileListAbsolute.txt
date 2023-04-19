@@ -1,0 +1,8 @@
+D:\test\Partial\Partial\bin\Debug\Partial.dll
+D:\test\Partial\Partial\bin\Debug\Partial.pdb
+D:\test\Partial\Partial\obj\Debug\Partial.csproj.AssemblyReference.cache
+D:\test\Partial\Partial\obj\Debug\Partial.csproj.GenerateResource.cache
+D:\test\Partial\Partial\obj\Debug\Partial.csproj.CoreCompileInputs.cache
+D:\test\Partial\Partial\obj\Debug\Partial.dll
+D:\test\Partial\Partial\obj\Debug\Partial.pdb
+D:\test\Partial\Partial\obj\Debug\Partial.Form1.resources

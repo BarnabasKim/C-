@@ -1,0 +1,11 @@
+D:\test\StreamReader_Write\StreamReader_Write\bin\Debug\StreamReader_Write.exe.config
+D:\test\StreamReader_Write\StreamReader_Write\bin\Debug\StreamReader_Write.exe
+D:\test\StreamReader_Write\StreamReader_Write\bin\Debug\StreamReader_Write.pdb
+D:\test\StreamReader_Write\StreamReader_Write\obj\Debug\StreamReader_Write.csproj.AssemblyReference.cache
+D:\test\StreamReader_Write\StreamReader_Write\obj\Debug\StreamReader_Write.csproj.SuggestedBindingRedirects.cache
+D:\test\StreamReader_Write\StreamReader_Write\obj\Debug\StreamReader_Write.Form1.resources
+D:\test\StreamReader_Write\StreamReader_Write\obj\Debug\StreamReader_Write.Properties.Resources.resources
+D:\test\StreamReader_Write\StreamReader_Write\obj\Debug\StreamReader_Write.csproj.GenerateResource.cache
+D:\test\StreamReader_Write\StreamReader_Write\obj\Debug\StreamReader_Write.csproj.CoreCompileInputs.cache
+D:\test\StreamReader_Write\StreamReader_Write\obj\Debug\StreamReader_Write.exe
+D:\test\StreamReader_Write\StreamReader_Write\obj\Debug\StreamReader_Write.pdb

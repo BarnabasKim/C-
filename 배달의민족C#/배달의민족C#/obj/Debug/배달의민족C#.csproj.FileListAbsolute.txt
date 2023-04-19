@@ -1,0 +1,12 @@
+D:\test\배달의민족C#\배달의민족C#\bin\Debug\배달의민족C#.exe.config
+D:\test\배달의민족C#\배달의민족C#\bin\Debug\배달의민족C#.exe
+D:\test\배달의민족C#\배달의민족C#\bin\Debug\배달의민족C#.pdb
+D:\test\배달의민족C#\배달의민족C#\obj\Debug\배달의민족C#.csproj.AssemblyReference.cache
+D:\test\배달의민족C#\배달의민족C#\obj\Debug\배달의민족C#.csproj.SuggestedBindingRedirects.cache
+D:\test\배달의민족C#\배달의민족C#\obj\Debug\배달의민족C_.Form1.resources
+D:\test\배달의민족C#\배달의민족C#\obj\Debug\배달의민족C_.Form2.resources
+D:\test\배달의민족C#\배달의민족C#\obj\Debug\배달의민족C_.Properties.Resources.resources
+D:\test\배달의민족C#\배달의민족C#\obj\Debug\배달의민족C#.csproj.GenerateResource.cache
+D:\test\배달의민족C#\배달의민족C#\obj\Debug\배달의민족C#.csproj.CoreCompileInputs.cache
+D:\test\배달의민족C#\배달의민족C#\obj\Debug\배달의민족C#.exe
+D:\test\배달의민족C#\배달의민족C#\obj\Debug\배달의민족C#.pdb

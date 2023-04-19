@@ -1,0 +1,31 @@
+c:\users\사용자\source\repos\15 Partial\15 Partial\bin\Debug\15 Partial.exe.config
+c:\users\사용자\source\repos\15 Partial\15 Partial\bin\Debug\15 Partial.exe
+c:\users\사용자\source\repos\15 Partial\15 Partial\bin\Debug\15 Partial.pdb
+c:\users\사용자\source\repos\15 Partial\15 Partial\obj\Debug\15 Partial.csprojResolveAssemblyReference.cache
+c:\users\사용자\source\repos\15 Partial\15 Partial\obj\Debug\_15_Partial.Form1.resources
+c:\users\사용자\source\repos\15 Partial\15 Partial\obj\Debug\_15_Partial.Properties.Resources.resources
+c:\users\사용자\source\repos\15 Partial\15 Partial\obj\Debug\15 Partial.csproj.GenerateResource.Cache
+c:\users\사용자\source\repos\15 Partial\15 Partial\obj\Debug\15 Partial.csproj.CoreCompileInputs.cache
+c:\users\사용자\source\repos\15 Partial\15 Partial\obj\Debug\15 Partial.exe
+c:\users\사용자\source\repos\15 Partial\15 Partial\obj\Debug\15 Partial.pdb
+C:\Users\사용자\source\repos\C#강의\01. Source\Study_15_Encapsulation_PartialClass\15 Partial\bin\Debug\15 Partial.exe.config
+C:\Users\사용자\source\repos\C#강의\01. Source\Study_15_Encapsulation_PartialClass\15 Partial\bin\Debug\15 Partial.exe
+C:\Users\사용자\source\repos\C#강의\01. Source\Study_15_Encapsulation_PartialClass\15 Partial\bin\Debug\15 Partial.pdb
+C:\Users\사용자\source\repos\C#강의\01. Source\Study_15_Encapsulation_PartialClass\15 Partial\obj\Debug\15 Partial.csprojResolveAssemblyReference.cache
+C:\Users\사용자\source\repos\C#강의\01. Source\Study_15_Encapsulation_PartialClass\15 Partial\obj\Debug\_15_Partial.Form1.resources
+C:\Users\사용자\source\repos\C#강의\01. Source\Study_15_Encapsulation_PartialClass\15 Partial\obj\Debug\_15_Partial.Properties.Resources.resources
+C:\Users\사용자\source\repos\C#강의\01. Source\Study_15_Encapsulation_PartialClass\15 Partial\obj\Debug\15 Partial.csproj.GenerateResource.Cache
+C:\Users\사용자\source\repos\C#강의\01. Source\Study_15_Encapsulation_PartialClass\15 Partial\obj\Debug\15 Partial.csproj.CoreCompileInputs.cache
+C:\Users\사용자\source\repos\C#강의\01. Source\Study_15_Encapsulation_PartialClass\15 Partial\obj\Debug\15 Partial.exe
+C:\Users\사용자\source\repos\C#강의\01. Source\Study_15_Encapsulation_PartialClass\15 Partial\obj\Debug\15 Partial.pdb
+D:\test\Study_15_Encapsulation_PartialClass\15 Partial\bin\Debug\15 Partial.exe.config
+D:\test\Study_15_Encapsulation_PartialClass\15 Partial\bin\Debug\15 Partial.exe
+D:\test\Study_15_Encapsulation_PartialClass\15 Partial\bin\Debug\15 Partial.pdb
+D:\test\Study_15_Encapsulation_PartialClass\15 Partial\obj\Debug\15 Partial.csproj.AssemblyReference.cache
+D:\test\Study_15_Encapsulation_PartialClass\15 Partial\obj\Debug\15 Partial.csproj.SuggestedBindingRedirects.cache
+D:\test\Study_15_Encapsulation_PartialClass\15 Partial\obj\Debug\_15_Partial.Form1.resources
+D:\test\Study_15_Encapsulation_PartialClass\15 Partial\obj\Debug\_15_Partial.Properties.Resources.resources
+D:\test\Study_15_Encapsulation_PartialClass\15 Partial\obj\Debug\15 Partial.csproj.GenerateResource.cache
+D:\test\Study_15_Encapsulation_PartialClass\15 Partial\obj\Debug\15 Partial.csproj.CoreCompileInputs.cache
+D:\test\Study_15_Encapsulation_PartialClass\15 Partial\obj\Debug\15 Partial.exe
+D:\test\Study_15_Encapsulation_PartialClass\15 Partial\obj\Debug\15 Partial.pdb

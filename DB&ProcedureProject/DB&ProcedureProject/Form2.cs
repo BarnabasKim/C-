@@ -14,13 +14,15 @@ namespace DB_ProcedureProject
     {
         private string COOK_NAME_CODE;
         private int COOK_PRICE;
+        private Form1 _form1;
 
-        public Form2(string COOK_CODE,int COOK_PRICE)
+        public Form2(string COOK_NAME_CODE,int COOK_PRICE, Form1 form1)
         {
             InitializeComponent();
             this.COOK_NAME_CODE = COOK_NAME_CODE;
             this.COOK_PRICE = COOK_PRICE;
             txtCookPrice.Text = COOK_PRICE.ToString();
+            _form1 = form1;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -43,12 +45,14 @@ namespace DB_ProcedureProject
             if (result)
             {
                 MessageBox.Show("가격이 업데이트되었습니다.");
+                _form1.RefreshData();
                 this.Close();
             }
             else
             {
                 MessageBox.Show("가격 업데이트에 실패하였습니다.");
             }
+
         }
     }
 }
