@@ -12,6 +12,8 @@ namespace 배달의민족C_
         public string COOK_KATEGORIE { get; set; }
 
         public int COOK_PRICE { get; set; }
+
+        public int COOK_COUNT { get; set; }
         public string COOK_NAME_CODE { get; set; }
     }
 }

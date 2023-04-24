@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _17_XMLControl;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,10 @@ namespace StreamReader_Write
 {
     public partial class Form1 : Form
     {
+
+        CXMLControl _xml = new CXMLControl();   // 만들어 놓은 CXMLControl을 사용하기 위해 선언 및 초기화 (기본 생성자)
+        Dictionary<string, string> _dData = new Dictionary<string, string>();  // CXMLControl과 Data를 주고 받기 위해 Dictionary를 선언 및 초기화
+
         /// <summary>
         /// 진입점
         /// </summary>
@@ -37,6 +42,16 @@ namespace StreamReader_Write
             int iNumber = (int)numData.Value;
 
             StringBuilder sb = new StringBuilder();
+
+
+            _dData.Clear();  // 기존에 Dictionary에 Data가 남아 있을 수 있으므로 작성 하기 전 초기화 시킴
+
+            // Dictionary에 UI에서 작성 한 항목과 값을 Key와 Value로 저장
+            _dData.Add(CXMLControl._TEXT_DATA, strText);
+            _dData.Add(CXMLControl._CBOX_DATA, bChecked.ToString());
+            _dData.Add(CXMLControl._NUMBER_DATA, iNumber.ToString());
+
+
             sb.Append(strText + strEnter);
             sb.Append(bChecked.ToString() + strEnter);
             sb.Append(iNumber.ToString() + strEnter);
@@ -55,8 +70,8 @@ namespace StreamReader_Write
             string strFilePath = string.Empty;
 
             SFDialog.InitialDirectory = Application.StartupPath;   //프로그램 실행 파일 위치
-            SFDialog.FileName = "*.txt";
-            SFDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            SFDialog.FileName = "*.xml";
+            SFDialog.Filter = "xml files (*.xml)|*.txt|All files (*.*)|*.*";
 
             if (SFDialog.ShowDialog() == DialogResult.OK)
             {
@@ -68,7 +83,9 @@ namespace StreamReader_Write
                 //swSFDialog.WriteLine(tboxConfigData.Text);
                 //swSFDialog.Close();
 
-                File.WriteAllText(strFilePath, tboxConfigData.Text);
+                //File.WriteAllText(strFilePath, tboxConfigData.Text);
+
+                _xml.fXML_Writer(strFilePath, _dData);   // 작성 한 CXMLControl에서 fXML_Writer를 호출해서 XML File을 생성
             }
 
         }
@@ -84,8 +101,8 @@ namespace StreamReader_Write
             string strFilePath = string.Empty;
 
             OFDialog.InitialDirectory = Application.StartupPath;   //프로그램 실행 파일 위치
-            OFDialog.FileName = "*.txt";
-            OFDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            OFDialog.FileName = "*.xml";
+            OFDialog.Filter = "xml files (*.xml)|*.*";
 
             StringBuilder sb = new StringBuilder();
 
@@ -104,10 +121,13 @@ namespace StreamReader_Write
 
                 sb.Append(File.ReadAllText(strFilePath));  // 텍스트 파일을 String 형태로 한번에 읽어 옴
 
-                //string[] dd = File.ReadAllLines(strFilePath);   // 텍스트 파일을 한줄 씩 String 배열 형태로 한번에 읽어 옴
+                //string[] dd =  File.ReadAllLines(strFilePath);   // 텍스트 파일을 한줄 씩 String 배열 형태로 한번에 읽어 옴
 
 
                 tboxConfigData.Text = sb.ToString();
+
+                _dData.Clear();   // 기존에 Dictionary에 Data가 남아 있을 수 있으므로 작성 하기 전 초기화 시킴
+                _dData = _xml.fXML_Reader(strFilePath);   // 작성 한 CXMLControl에서 fXML_Reader를 호출해서 XML File을 읽어서 필요한 정보를 Dictionary 형태로 가져 옴
             }
         }
 
@@ -119,11 +139,18 @@ namespace StreamReader_Write
         /// <param name="e"></param>
         private void btnConfigRead_Click(object sender, EventArgs e)
         {
-            string[] strConfig = tboxConfigData.Text.Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);  // 문자열 안에있는 '\r\n'을 기준으로 split 시킴
+            //string[] strConfig = tboxConfigData.Text.Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);  // 문자열 안에있는 '\r\n'을 기준으로 split 시킴
 
-            tboxData.Text = strConfig[0];
-            cboxData.Checked = bool.Parse(strConfig[1]);
-            numData.Value = int.Parse(strConfig[2]);
+            //tboxData.Text = strConfig[0];
+            //cboxData.Checked = bool.Parse(strConfig[1]);
+            //numData.Value = int.Parse(strConfig[2]);
+
+
+            // Dictionary에 있는 정보를 UI에 입력함
+            tboxData.Text = _dData[CXMLControl._TEXT_DATA];
+            cboxData.Checked = bool.Parse(_dData[CXMLControl._CBOX_DATA]);
+            numData.Value = int.Parse(_dData[CXMLControl._NUMBER_DATA]);
         }
     }
 }
+

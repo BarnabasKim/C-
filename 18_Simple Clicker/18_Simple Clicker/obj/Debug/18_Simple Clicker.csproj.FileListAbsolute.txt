@@ -1,0 +1,11 @@
+D:\test\18_Simple Clicker\18_Simple Clicker\bin\Debug\18_Simple Clicker.exe.config
+D:\test\18_Simple Clicker\18_Simple Clicker\bin\Debug\18_Simple Clicker.exe
+D:\test\18_Simple Clicker\18_Simple Clicker\bin\Debug\18_Simple Clicker.pdb
+D:\test\18_Simple Clicker\18_Simple Clicker\obj\Debug\18_Simple Clicker.csproj.AssemblyReference.cache
+D:\test\18_Simple Clicker\18_Simple Clicker\obj\Debug\18_Simple Clicker.csproj.SuggestedBindingRedirects.cache
+D:\test\18_Simple Clicker\18_Simple Clicker\obj\Debug\_18_Simple_Clicker.Form1.resources
+D:\test\18_Simple Clicker\18_Simple Clicker\obj\Debug\_18_Simple_Clicker.Properties.Resources.resources
+D:\test\18_Simple Clicker\18_Simple Clicker\obj\Debug\18_Simple Clicker.csproj.GenerateResource.cache
+D:\test\18_Simple Clicker\18_Simple Clicker\obj\Debug\18_Simple Clicker.csproj.CoreCompileInputs.cache
+D:\test\18_Simple Clicker\18_Simple Clicker\obj\Debug\18_Simple Clicker.exe
+D:\test\18_Simple Clicker\18_Simple Clicker\obj\Debug\18_Simple Clicker.pdb

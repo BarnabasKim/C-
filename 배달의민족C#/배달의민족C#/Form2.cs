@@ -25,6 +25,7 @@ namespace 배달의민족C_
             {
                 form1.tabControl1.SelectedTab = form1.tabPage1;
             }
+            this.Close();
         }
 
         private void btnPage2_Click(object sender, EventArgs e)
@@ -34,6 +35,13 @@ namespace 배달의민족C_
             {
                 form1.tabControl1.SelectedTab = form1.tabPage2;
             }
+            this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }

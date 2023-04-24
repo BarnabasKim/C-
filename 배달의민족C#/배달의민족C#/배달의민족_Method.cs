@@ -143,7 +143,47 @@ namespace 배달의민족C_
         }
 
 
+        public bool UpdatePrice(string COOK_NAME_CODE, int COOK_PRICE, int COOK_COUNT)
+        {
+            try
+            {
+                using (SqlConnection connect = new SqlConnection(connectionString))
+                {
 
+                    // 저장 프로시저 생성
+                    SqlCommand cmd = new SqlCommand("SP_KDW_FOOD_UPDATE", connect);
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+                    // 저장 프로시저의 매개변수 설정
+                    cmd.Parameters.Add(new SqlParameter("@COOK_PRICE", COOK_PRICE));
+                    cmd.Parameters.Add(new SqlParameter("@COOK_NAME_CODE", COOK_NAME_CODE));
+                    cmd.Parameters.Add(new SqlParameter("@COOK_COUNT", COOK_COUNT));
+
+
+                    connect.Open();
+
+
+                    // SqlCommand 객체를 실행하여 반환된 결과의 행 수를 반환
+                    int result = cmd.ExecuteNonQuery();
+
+                    // 행이 한 개 이상이면 true 반환, 아니면 false 반환
+                    if (result > 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("데이터베이스 연결 실패: " + ex.Message);
+                return false;
+            }
+        }
 
 
 

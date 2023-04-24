@@ -10,3 +10,4 @@ D:\test\배달의민족C#\배달의민족C#\obj\Debug\배달의민족C#.csproj.G
 D:\test\배달의민족C#\배달의민족C#\obj\Debug\배달의민족C#.csproj.CoreCompileInputs.cache
 D:\test\배달의민족C#\배달의민족C#\obj\Debug\배달의민족C#.exe
 D:\test\배달의민족C#\배달의민족C#\obj\Debug\배달의민족C#.pdb
+D:\test\배달의민족C#\배달의민족C#\obj\Debug\배달의민족C_.Form3.resources
