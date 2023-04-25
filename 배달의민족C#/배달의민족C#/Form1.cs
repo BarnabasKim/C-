@@ -86,12 +86,6 @@ namespace 배달의민족C_
             tboxCount.Text = string.Empty;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form2 form2 = new Form2();
-            form2.Owner = this; // Form1을 Form2의 Owner로 설정합니다.
-            form2.ShowDialog();
-        }
 
 
         public void RefreshData()
@@ -114,7 +108,7 @@ namespace 배달의민족C_
         private void button2_Click(object sender, EventArgs e)
         {
             RefreshData();
-       
+
         }
 
         private void btnDelAll_Click(object sender, EventArgs e)
@@ -179,7 +173,7 @@ namespace 배달의민족C_
             }
         }
 
-   
+
 
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -203,20 +197,53 @@ namespace 배달의민족C_
             form3.ShowDialog();
 
         }
+        /// <summary>
+        /// 검색 기능 구현 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("검색 정보를 입력해주세요");
+            }
+            else
+            {
+                string SearchItem = textBox1.Text.ToString();
+                배달의민족_Method bdm = new 배달의민족_Method();
+                DataTable dt = bdm.searchData(SearchItem);
+                
+                if (dt != null && dt.Rows.Count > 0)
+                {
+                    
+
+                    dataGridView1.DataSource = dt; //검색결과를 DataGridView에 바인딩
+                }
+                else
+                {
+                    MessageBox.Show("검색 결과가 없습니다.");
+                }
+
+                //텍스트 박스 초기화
+                textBox1.Text = "";
+            }
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.btnSearch_Click(sender, e);
+            }
+        }
     }
-
-
-
 }
 
 
 
-      /*  private void button4_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(comboBox1.SelectedValue.ToString());
 
-            //cTestList list = test.GetFoodKategorie(comboBox1.SelectedValue.ToString(), tbxFood.Text, Convert.ToInt32(tboxPrice.Text));
-        }*/
+
   
 
 

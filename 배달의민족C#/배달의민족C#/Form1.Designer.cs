@@ -52,6 +52,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnDelAll = new System.Windows.Forms.Button();
@@ -132,17 +134,17 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(951, 608);
+            this.tabControl1.Size = new System.Drawing.Size(1087, 760);
             this.tabControl1.TabIndex = 5;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.tableLayoutPanel1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(943, 582);
+            this.tabPage1.Size = new System.Drawing.Size(1079, 731);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "주문";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -166,26 +168,27 @@
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.29932F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.70068F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 104F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 79F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 91F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(937, 578);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 130F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 99F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 118F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 114F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1073, 727);
             this.tableLayoutPanel1.TabIndex = 24;
             // 
             // tboxCount
             // 
             this.tboxCount.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tboxCount.Font = new System.Drawing.Font("굴림", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tboxCount.Location = new System.Drawing.Point(463, 394);
+            this.tboxCount.Location = new System.Drawing.Point(529, 496);
             this.tboxCount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tboxCount.Multiline = true;
             this.tboxCount.Name = "tboxCount";
-            this.tboxCount.Size = new System.Drawing.Size(471, 90);
+            this.tboxCount.Size = new System.Drawing.Size(541, 114);
             this.tboxCount.TabIndex = 22;
             // 
             // button4
@@ -193,10 +196,10 @@
             this.button4.BackColor = System.Drawing.Color.Teal;
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button4.Font = new System.Drawing.Font("굴림", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button4.Location = new System.Drawing.Point(475, 501);
-            this.button4.Margin = new System.Windows.Forms.Padding(15);
+            this.button4.Location = new System.Drawing.Point(543, 631);
+            this.button4.Margin = new System.Windows.Forms.Padding(17, 19, 17, 19);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(447, 62);
+            this.button4.Size = new System.Drawing.Size(513, 77);
             this.button4.TabIndex = 1;
             this.button4.Text = "배달";
             this.button4.UseVisualStyleBackColor = false;
@@ -206,11 +209,11 @@
             // 
             this.tboxPrice.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tboxPrice.Font = new System.Drawing.Font("굴림", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tboxPrice.Location = new System.Drawing.Point(463, 315);
+            this.tboxPrice.Location = new System.Drawing.Point(529, 397);
             this.tboxPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tboxPrice.Multiline = true;
             this.tboxPrice.Name = "tboxPrice";
-            this.tboxPrice.Size = new System.Drawing.Size(471, 75);
+            this.tboxPrice.Size = new System.Drawing.Size(541, 95);
             this.tboxPrice.TabIndex = 21;
             // 
             // label7
@@ -220,7 +223,7 @@
             this.label7.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label7.Location = new System.Drawing.Point(3, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(454, 101);
+            this.label7.Size = new System.Drawing.Size(520, 128);
             this.label7.TabIndex = 3;
             this.label7.Text = "배달의 민족(정보)";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -229,11 +232,11 @@
             // 
             this.tbxFood.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbxFood.Font = new System.Drawing.Font("굴림", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tbxFood.Location = new System.Drawing.Point(463, 211);
+            this.tbxFood.Location = new System.Drawing.Point(529, 267);
             this.tbxFood.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxFood.Multiline = true;
             this.tbxFood.Name = "tbxFood";
-            this.tbxFood.Size = new System.Drawing.Size(471, 100);
+            this.tbxFood.Size = new System.Drawing.Size(541, 126);
             this.tbxFood.TabIndex = 20;
             // 
             // button3
@@ -241,11 +244,11 @@
             this.button3.BackColor = System.Drawing.Color.RosyBrown;
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button3.Location = new System.Drawing.Point(15, 501);
-            this.button3.Margin = new System.Windows.Forms.Padding(15);
+            this.button3.Location = new System.Drawing.Point(17, 631);
+            this.button3.Margin = new System.Windows.Forms.Padding(17, 19, 17, 19);
             this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(15);
-            this.button3.Size = new System.Drawing.Size(430, 62);
+            this.button3.Padding = new System.Windows.Forms.Padding(17, 19, 17, 19);
+            this.button3.Size = new System.Drawing.Size(492, 77);
             this.button3.TabIndex = 0;
             this.button3.Text = "초기화";
             this.button3.UseVisualStyleBackColor = false;
@@ -255,10 +258,10 @@
             // 
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button5.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button5.Location = new System.Drawing.Point(480, 20);
-            this.button5.Margin = new System.Windows.Forms.Padding(20);
+            this.button5.Location = new System.Drawing.Point(549, 25);
+            this.button5.Margin = new System.Windows.Forms.Padding(23, 25, 23, 25);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(437, 61);
+            this.button5.Size = new System.Drawing.Size(501, 78);
             this.button5.TabIndex = 2;
             this.button5.Text = "메뉴";
             this.button5.UseVisualStyleBackColor = true;
@@ -270,12 +273,13 @@
             this.comboBox1.DataSource = this.cTestListBindingSource;
             this.comboBox1.DisplayMember = "COOK_KATEGORIE";
             this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("굴림", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(463, 103);
+            this.comboBox1.Location = new System.Drawing.Point(529, 130);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(471, 35);
+            this.comboBox1.Size = new System.Drawing.Size(541, 42);
             this.comboBox1.TabIndex = 19;
             this.comboBox1.ValueMember = "COOK_CODE";
             // 
@@ -289,10 +293,10 @@
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("굴림", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.Location = new System.Drawing.Point(15, 116);
-            this.label2.Margin = new System.Windows.Forms.Padding(15);
+            this.label2.Location = new System.Drawing.Point(17, 147);
+            this.label2.Margin = new System.Windows.Forms.Padding(17, 19, 17, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(430, 78);
+            this.label2.Size = new System.Drawing.Size(492, 99);
             this.label2.TabIndex = 15;
             this.label2.Text = "종류";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -303,10 +307,10 @@
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("굴림", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(15, 224);
-            this.label3.Margin = new System.Windows.Forms.Padding(15);
+            this.label3.Location = new System.Drawing.Point(17, 284);
+            this.label3.Margin = new System.Windows.Forms.Padding(17, 19, 17, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(430, 74);
+            this.label3.Size = new System.Drawing.Size(492, 92);
             this.label3.TabIndex = 16;
             this.label3.Text = "음식";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -317,10 +321,10 @@
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("굴림", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(15, 407);
-            this.label5.Margin = new System.Windows.Forms.Padding(15);
+            this.label5.Location = new System.Drawing.Point(17, 513);
+            this.label5.Margin = new System.Windows.Forms.Padding(17, 19, 17, 19);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(430, 64);
+            this.label5.Size = new System.Drawing.Size(492, 80);
             this.label5.TabIndex = 18;
             this.label5.Text = "배달수량";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -331,10 +335,10 @@
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("굴림", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Location = new System.Drawing.Point(15, 328);
-            this.label4.Margin = new System.Windows.Forms.Padding(15);
+            this.label4.Location = new System.Drawing.Point(17, 414);
+            this.label4.Margin = new System.Windows.Forms.Padding(17, 19, 17, 19);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(430, 49);
+            this.label4.Size = new System.Drawing.Size(492, 61);
             this.label4.TabIndex = 17;
             this.label4.Text = "가격";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -344,11 +348,11 @@
             this.tabPage2.Controls.Add(this.panel1);
             this.tabPage2.Controls.Add(this.panel2);
             this.tabPage2.Controls.Add(this.tableLayoutPanel2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(943, 582);
+            this.tabPage2.Size = new System.Drawing.Size(1079, 731);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "배달확인";
             // 
@@ -356,11 +360,37 @@
             // 
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 132);
+            this.panel1.Location = new System.Drawing.Point(3, 207);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(50);
-            this.panel1.Size = new System.Drawing.Size(937, 348);
+            this.panel1.Padding = new System.Windows.Forms.Padding(57, 62, 57, 62);
+            this.panel1.Size = new System.Drawing.Size(1073, 397);
             this.panel1.TabIndex = 21;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnSearch.Font = new System.Drawing.Font("굴림", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnSearch.Location = new System.Drawing.Point(679, 136);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(0);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(149, 69);
+            this.btnSearch.TabIndex = 22;
+            this.btnSearch.Text = "검색";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox1.Font = new System.Drawing.Font("나눔고딕", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox1.Location = new System.Drawing.Point(3, 139);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(673, 39);
+            this.textBox1.TabIndex = 21;
+            this.textBox1.Text = "음식의 이름을 적어주세요";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
             // dataGridView1
             // 
@@ -369,13 +399,15 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(50, 50);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(20);
+            this.dataGridView1.Location = new System.Drawing.Point(57, 62);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(23, 25, 23, 25);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 60;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(837, 248);
+            this.dataGridView1.Size = new System.Drawing.Size(959, 273);
             this.dataGridView1.TabIndex = 19;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
@@ -385,9 +417,10 @@
             // 
             this.panel2.Controls.Add(this.btnDelAll);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(3, 480);
+            this.panel2.Location = new System.Drawing.Point(3, 604);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(937, 100);
+            this.panel2.Size = new System.Drawing.Size(1073, 125);
             this.panel2.TabIndex = 20;
             // 
             // btnDelAll
@@ -397,10 +430,10 @@
             this.btnDelAll.Font = new System.Drawing.Font("굴림", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnDelAll.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnDelAll.Location = new System.Drawing.Point(0, 0);
-            this.btnDelAll.Margin = new System.Windows.Forms.Padding(20);
+            this.btnDelAll.Margin = new System.Windows.Forms.Padding(23, 25, 23, 25);
             this.btnDelAll.Name = "btnDelAll";
-            this.btnDelAll.Padding = new System.Windows.Forms.Padding(11);
-            this.btnDelAll.Size = new System.Drawing.Size(937, 100);
+            this.btnDelAll.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.btnDelAll.Size = new System.Drawing.Size(1073, 125);
             this.btnDelAll.TabIndex = 16;
             this.btnDelAll.Text = "배달 취소";
             this.btnDelAll.UseVisualStyleBackColor = false;
@@ -412,16 +445,20 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.31811F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.68189F));
             this.tableLayoutPanel2.Controls.Add(this.label6, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.textBox1, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.button1, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.button2, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.comboBox2, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.btnSearch, 1, 2);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(937, 130);
+            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1073, 205);
             this.tableLayoutPanel2.TabIndex = 20;
             // 
             // label6
@@ -431,7 +468,7 @@
             this.label6.Font = new System.Drawing.Font("굴림", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label6.Location = new System.Drawing.Point(3, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(587, 65);
+            this.label6.Size = new System.Drawing.Size(673, 68);
             this.label6.TabIndex = 10;
             this.label6.Text = "배달의 민족(배달리스트)";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -442,10 +479,10 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Font = new System.Drawing.Font("굴림", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(604, 11);
-            this.button1.Margin = new System.Windows.Forms.Padding(11);
+            this.button1.Location = new System.Drawing.Point(692, 14);
+            this.button1.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(322, 43);
+            this.button1.Size = new System.Drawing.Size(368, 40);
             this.button1.TabIndex = 11;
             this.button1.Text = "메뉴";
             this.button1.UseVisualStyleBackColor = false;
@@ -457,10 +494,10 @@
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.Font = new System.Drawing.Font("굴림", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(604, 76);
-            this.button2.Margin = new System.Windows.Forms.Padding(11);
+            this.button2.Location = new System.Drawing.Point(692, 82);
+            this.button2.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(322, 43);
+            this.button2.Size = new System.Drawing.Size(368, 40);
             this.button2.TabIndex = 18;
             this.button2.Text = "조회";
             this.button2.UseVisualStyleBackColor = false;
@@ -473,10 +510,10 @@
             this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox2.Font = new System.Drawing.Font("굴림", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(3, 67);
+            this.comboBox2.Location = new System.Drawing.Point(3, 70);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(587, 35);
+            this.comboBox2.Size = new System.Drawing.Size(673, 42);
             this.comboBox2.TabIndex = 14;
             this.comboBox2.ValueMember = "COOK_CODE";
             // 
@@ -486,15 +523,15 @@
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(951, 608);
+            this.panel3.Size = new System.Drawing.Size(1087, 760);
             this.panel3.TabIndex = 6;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(951, 608);
+            this.ClientSize = new System.Drawing.Size(1087, 760);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel3);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -549,6 +586,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

@@ -1,0 +1,31 @@
+c:\users\사용자\source\repos\20 Queue_Stack\20 Queue_Stack\bin\Debug\20 Queue_Stack.exe.config
+c:\users\사용자\source\repos\20 Queue_Stack\20 Queue_Stack\bin\Debug\20 Queue_Stack.exe
+c:\users\사용자\source\repos\20 Queue_Stack\20 Queue_Stack\bin\Debug\20 Queue_Stack.pdb
+c:\users\사용자\source\repos\20 Queue_Stack\20 Queue_Stack\obj\Debug\20 Queue_Stack.csprojResolveAssemblyReference.cache
+c:\users\사용자\source\repos\20 Queue_Stack\20 Queue_Stack\obj\Debug\_20_Queue_Stack.Form1.resources
+c:\users\사용자\source\repos\20 Queue_Stack\20 Queue_Stack\obj\Debug\_20_Queue_Stack.Properties.Resources.resources
+c:\users\사용자\source\repos\20 Queue_Stack\20 Queue_Stack\obj\Debug\20 Queue_Stack.csproj.GenerateResource.Cache
+c:\users\사용자\source\repos\20 Queue_Stack\20 Queue_Stack\obj\Debug\20 Queue_Stack.csproj.CoreCompileInputs.cache
+c:\users\사용자\source\repos\20 Queue_Stack\20 Queue_Stack\obj\Debug\20 Queue_Stack.exe
+c:\users\사용자\source\repos\20 Queue_Stack\20 Queue_Stack\obj\Debug\20 Queue_Stack.pdb
+C:\Users\사용자\source\repos\01. C#강의\01. Source\Study_20_Queue_Stack(UI)\20 Queue_Stack\obj\Debug\20 Queue_Stack.csprojResolveAssemblyReference.cache
+C:\Users\사용자\source\repos\01. C#강의\01. Source\Study_20_Queue_Stack(UI)\20 Queue_Stack\obj\Debug\_20_Queue_Stack.Form1.resources
+C:\Users\사용자\source\repos\01. C#강의\01. Source\Study_20_Queue_Stack(UI)\20 Queue_Stack\obj\Debug\_20_Queue_Stack.Properties.Resources.resources
+C:\Users\사용자\source\repos\01. C#강의\01. Source\Study_20_Queue_Stack(UI)\20 Queue_Stack\obj\Debug\20 Queue_Stack.csproj.GenerateResource.Cache
+C:\Users\사용자\source\repos\01. C#강의\01. Source\Study_20_Queue_Stack(UI)\20 Queue_Stack\obj\Debug\20 Queue_Stack.csproj.CoreCompileInputs.cache
+C:\Users\사용자\source\repos\01. C#강의\01. Source\Study_20_Queue_Stack(UI)\20 Queue_Stack\obj\Debug\20 Queue_Stack.exe
+C:\Users\사용자\source\repos\01. C#강의\01. Source\Study_20_Queue_Stack(UI)\20 Queue_Stack\obj\Debug\20 Queue_Stack.pdb
+C:\Users\사용자\source\repos\01. C#강의\01. Source\Study_20_Queue_Stack(UI)\20 Queue_Stack\bin\Debug\20 Queue_Stack.exe.config
+C:\Users\사용자\source\repos\01. C#강의\01. Source\Study_20_Queue_Stack(UI)\20 Queue_Stack\bin\Debug\20 Queue_Stack.exe
+C:\Users\사용자\source\repos\01. C#강의\01. Source\Study_20_Queue_Stack(UI)\20 Queue_Stack\bin\Debug\20 Queue_Stack.pdb
+D:\test\20 Queue_Stack\20 Queue_Stack\bin\Debug\20 Queue_Stack.exe.config
+D:\test\20 Queue_Stack\20 Queue_Stack\bin\Debug\20 Queue_Stack.exe
+D:\test\20 Queue_Stack\20 Queue_Stack\bin\Debug\20 Queue_Stack.pdb
+D:\test\20 Queue_Stack\20 Queue_Stack\obj\Debug\20 Queue_Stack.csproj.AssemblyReference.cache
+D:\test\20 Queue_Stack\20 Queue_Stack\obj\Debug\20 Queue_Stack.csproj.SuggestedBindingRedirects.cache
+D:\test\20 Queue_Stack\20 Queue_Stack\obj\Debug\_20_Queue_Stack.Form1.resources
+D:\test\20 Queue_Stack\20 Queue_Stack\obj\Debug\_20_Queue_Stack.Properties.Resources.resources
+D:\test\20 Queue_Stack\20 Queue_Stack\obj\Debug\20 Queue_Stack.csproj.GenerateResource.cache
+D:\test\20 Queue_Stack\20 Queue_Stack\obj\Debug\20 Queue_Stack.csproj.CoreCompileInputs.cache
+D:\test\20 Queue_Stack\20 Queue_Stack\obj\Debug\20 Queue_Stack.exe
+D:\test\20 Queue_Stack\20 Queue_Stack\obj\Debug\20 Queue_Stack.pdb

@@ -50,7 +50,6 @@ namespace 배달의민족C_
 
             배달의민족_Method test = new 배달의민족_Method();
             bool result = test.UpdatePrice(COOK_NAME_CODE, cookPrice, cookCount);
-            Console.WriteLine(result);
 
             if (result)
             {

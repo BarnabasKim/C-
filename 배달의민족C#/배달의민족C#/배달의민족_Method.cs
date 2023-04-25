@@ -186,6 +186,36 @@ namespace 배달의민족C_
         }
 
 
+        public DataTable searchData(string SearchItem)
+        {
+            try
+            {
+                using (SqlConnection connect = new SqlConnection(connectionString))
+                {
+                    SqlCommand cmd = new SqlCommand("SP_KDW_FOOD_SEARCH", connect);
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+                    cmd.Parameters.Add(new SqlParameter("SearchItem", SearchItem));
+
+                    connect.Open();
+
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+
+
+                    adapter.Fill(dt);
+
+                    return dt;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("데이터베이스 연결 실패: " + ex.Message);
+                return null;
+            }
+        }
+
+
 
     }
 }
