@@ -62,9 +62,10 @@ namespace 배달의민족C_
             return list;
         }
 
-
-        public void AddFoodItem(String COOK_NAME, int COOK_PRICE, int COOK_COUNT, String COOK_CODE)
+        string result;
+        public string AddFoodItem(String COOK_NAME, int COOK_PRICE, int COOK_COUNT, String COOK_CODE)
         {
+            
             try
             {
                 using (SqlConnection connect = new SqlConnection(connectionString))
@@ -79,7 +80,20 @@ namespace 배달의민족C_
                     cmd.Parameters.Add(new SqlParameter("COOK_CODE", COOK_CODE));
 
                     connect.Open();
-                    cmd.ExecuteNonQuery();
+
+                    // SqlDataAdapter를 이용해 결과 데이터를 DataSet으로 가져옴
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    DataSet ds = new DataSet();
+
+                    adapter.Fill(ds);
+
+                    // 결과 데이터의 첫번째 테이블을 가져옴
+                    DataTable dt = ds.Tables[0];
+
+                    DataRow dataRow = dt.Rows[0];
+                    result = dataRow["BCR_FORM"].ToString();
+
+
                     string COOK_NAME_CODE = cmd.Parameters["@COOK_NAME_CODE"].Value.ToString();
                 }
             }
@@ -88,7 +102,11 @@ namespace 배달의민족C_
                 Console.WriteLine("데이터베이스 연결 실패: " + ex.Message);
 
             }
+            return result;
+
         }
+
+
 
 
 

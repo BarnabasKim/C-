@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="cTestItem1.cs" />
     <Compile Include="cTestList.cs" />
+    <Compile Include="CustomDataGridViewCheckBoxCell.cs" />
+    <Compile Include="CustomDataGridViewCheckBoxColumn.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

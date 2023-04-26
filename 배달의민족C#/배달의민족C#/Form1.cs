@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -15,25 +16,32 @@ namespace 배달의민족C_
 {
     public partial class Form1 : Form
     {
+        private string _Data;
         public Form1()
         {
             InitializeComponent();
-
+            
             배달의민족_Method test = new 배달의민족_Method();
             cTestList list = test.GetFoodKategorie("COOK_CODE", "COOK_KATEGORIE");
             comboBox1.DataSource = list;
             comboBox2.DataSource = list;
 
+            //데이터그리드뷰 체크박스 추가
+            //DataGridViewCheckBoxColumn checkBoxColumn = new DataGridViewCheckBoxColumn();
+            //checkBoxColumn.HeaderText = "선택";
+            //checkBoxColumn.Name = "Column1";
+            //checkBoxColumn.Width = 50;
+            //checkBoxColumn.ReadOnly = false;
+            //checkBoxColumn.FillWeight = 30;
 
-            DataGridViewCheckBoxColumn checkBoxColumn = new DataGridViewCheckBoxColumn();
-            checkBoxColumn.HeaderText = "선택";
-            checkBoxColumn.Name = "Column1";
-            checkBoxColumn.Width = 50;
-            checkBoxColumn.ReadOnly = false;
-            checkBoxColumn.FillWeight = 30;
+            //// DataGridView 컬럼 추가
+            //dataGridView1.Columns.Add(checkBoxColumn);
 
-            // DataGridView 컬럼 추가
-            dataGridView1.Columns.Add(checkBoxColumn);
+            //CustomDataGridViewCheckBoxColumn column = new CustomDataGridViewCheckBoxColumn();
+            //column.HeaderText = "선택";
+            //column.Name = "Column1";
+            //column.CheckBoxSize = new Size(50, 50); // 체크박스 크기 조절
+            //dataGridView1.Columns.Add(column);
 
 
         }
@@ -45,7 +53,7 @@ namespace 배달의민족C_
             form2.Location = new Point(this.Right - form2.Width, this.Top);
             form2.ShowDialog();
         }
-
+        // 배달 음식 추가 기능
         private void btnInsert_Click(object sender, EventArgs e)
         {
 
@@ -61,7 +69,9 @@ namespace 배달의민족C_
             try
             {
                 배달의민족_Method bdm = new 배달의민족_Method();
-                bdm.AddFoodItem(COOK_NAME, COOK_PRICE, COOK_COUNT, COOK_CODE);
+                _Data = bdm.AddFoodItem(COOK_NAME, COOK_PRICE, COOK_COUNT, COOK_CODE);
+
+                MessageBox.Show(_Data);
                 MessageBox.Show("음식이 추가되었습니다.");
             }
 
@@ -78,7 +88,7 @@ namespace 배달의민족C_
         {
             RfreshFood();
         }
-
+        // 데이터 초기화 기능
         private void RfreshFood()
         {
             tbxFood.Text = string.Empty;
@@ -87,7 +97,7 @@ namespace 배달의민족C_
         }
 
 
-
+        // 데이터 쌓이지 않게 초기화
         public void RefreshData()
         {
             배달의민족_Method bdm = new 배달의민족_Method();
@@ -110,7 +120,7 @@ namespace 배달의민족C_
             RefreshData();
 
         }
-
+        // 배달 삭제 
         private void btnDelAll_Click(object sender, EventArgs e)
         {
             try
@@ -144,37 +154,37 @@ namespace 배달의민족C_
         }
 
 
+    //    //체크박스 크기 키우기
+    //    private void dataGridView1_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+    //    {
+    //        if (e.RowIndex >= 0 && e.ColumnIndex >= 0) //체크박스 크기 키우기
+    //        {
+    //            DataGridView dgv = (DataGridView)sender;
+    //            if (dgv.Columns[e.ColumnIndex] is DataGridViewCheckBoxColumn)
+    //            {
+    //                int checkBoxSize = 30;
+    //                e.PaintBackground(e.CellBounds, true);
+    //                ControlPaint.DrawCheckBox(e.Graphics, (e.CellBounds.Width - checkBoxSize) / 2,
+    //e.CellBounds.Y + (e.CellBounds.Height - checkBoxSize) / 2,
+    //                   checkBoxSize, checkBoxSize, (bool)e.FormattedValue ? ButtonState.Checked : ButtonState.Normal);
+    //                e.Handled = true;
+    //            }
+    //        }
+    //    }
 
-        private void dataGridView1_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
-        {
-            if (e.RowIndex >= 0 && e.ColumnIndex >= 0) //체크박스 크기 키우기
-            {
-                DataGridView dgv = (DataGridView)sender;
-                if (dgv.Columns[e.ColumnIndex] is DataGridViewCheckBoxColumn)
-                {
-                    int checkBoxSize = 30;
-                    e.PaintBackground(e.CellBounds, true);
-                    ControlPaint.DrawCheckBox(e.Graphics, (e.CellBounds.Width - checkBoxSize) / 2,
-    e.CellBounds.Y + (e.CellBounds.Height - checkBoxSize) / 2,
-                       checkBoxSize, checkBoxSize, (bool)e.FormattedValue ? ButtonState.Checked : ButtonState.Normal);
-                    e.Handled = true;
-                }
-            }
-        }
-
-
+        // 셀 클릭시 체크박스 클릭 되도록
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
                 DataGridView dgv = (DataGridView)sender;
                 dgv.Rows[e.RowIndex].Cells["Column1"].Value = !(bool)dgv.Rows[e.RowIndex].Cells["Column1"].FormattedValue;
-                dgv.RefreshEdit();
+              
             }
         }
 
 
-
+        //Form2의 메뉴 클릭 버튼, 위치 변경
         private void button1_Click_1(object sender, EventArgs e)
         {
             Form2 form2 = new Form2();
@@ -183,7 +193,11 @@ namespace 배달의민족C_
             form2.ShowDialog();
 
         }
-
+        /// <summary>
+        /// 수정 기능 구현
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0) return;
