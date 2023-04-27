@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Printing;
+using System.IO.Ports;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,9 @@ namespace 배달의민족C_
     public partial class Form1 : Form
     {
         private string _Data;
+
+        private SerialPort _SP_PRINTER = new SerialPort();
+
         public Form1()
         {
             InitializeComponent();
@@ -25,23 +29,6 @@ namespace 배달의민족C_
             cTestList list = test.GetFoodKategorie("COOK_CODE", "COOK_KATEGORIE");
             comboBox1.DataSource = list;
             comboBox2.DataSource = list;
-
-            //데이터그리드뷰 체크박스 추가
-            //DataGridViewCheckBoxColumn checkBoxColumn = new DataGridViewCheckBoxColumn();
-            //checkBoxColumn.HeaderText = "선택";
-            //checkBoxColumn.Name = "Column1";
-            //checkBoxColumn.Width = 50;
-            //checkBoxColumn.ReadOnly = false;
-            //checkBoxColumn.FillWeight = 30;
-
-            //// DataGridView 컬럼 추가
-            //dataGridView1.Columns.Add(checkBoxColumn);
-
-            //CustomDataGridViewCheckBoxColumn column = new CustomDataGridViewCheckBoxColumn();
-            //column.HeaderText = "선택";
-            //column.Name = "Column1";
-            //column.CheckBoxSize = new Size(50, 50); // 체크박스 크기 조절
-            //dataGridView1.Columns.Add(column);
 
 
         }
@@ -71,7 +58,22 @@ namespace 배달의민족C_
                 배달의민족_Method bdm = new 배달의민족_Method();
                 _Data = bdm.AddFoodItem(COOK_NAME, COOK_PRICE, COOK_COUNT, COOK_CODE);
 
-                MessageBox.Show(_Data);
+                SerialOpen();
+
+                // 바코드 출력
+                try
+                {
+                        byte[] buf = Encoding.Default.GetBytes(_Data);
+                        // 바이트로 인코딩(한글 깨짐 방지)
+                        _SP_PRINTER.Write(buf, 0, buf.Length);
+                        // 인코딩한 바이트를 인덱스 0 부터 바이트길이까지
+                }
+
+                catch (InvalidOperationException) { }
+
+                SerialClose();
+
+               // MessageBox.Show(_Data);
                 MessageBox.Show("음식이 추가되었습니다.");
             }
 
@@ -104,22 +106,51 @@ namespace 배달의민족C_
             string category = comboBox2.Text;
             DataTable dt = bdm.GetCookList(category);
 
-
-            // 가져온 데이터가 존재할 경우
+        
             if (dt != null)
             {
+                
                 dataGridView1.DataSource = dt;   // DataGridView에 데이터 표시
                 dataGridView1.Columns["코드"].Visible = false;
             }
 
 
         }
-
+        //조회
         private void button2_Click(object sender, EventArgs e)
         {
+            dataGridView1.DataSource = null;
+
+            int totalRows = 50;
+
+            for (int i = 0; i < totalRows; i++)
+            {
+                dataGridView1.Rows.Add();
+            }
+
             RefreshData();
 
+            int currentRows = dataGridView1.RowCount;
+
+            if (dataGridView1.DataSource != null)
+            {
+                for (int i = currentRows; i < totalRows; i++)
+                {
+                    dataGridView1.Rows[i].Cells["음식"].Value = "";
+                    dataGridView1.Rows[i].Cells["가격"].Value = "";
+                    dataGridView1.Rows[i].Cells["수량"].Value = "";
+                }
+            }
+
+            foreach (DataGridViewRow oRow in dataGridView1.Rows)
+            {
+                oRow.HeaderCell.Value = oRow.Index.ToString();
+            }
+
+            dataGridView1.AutoResizeRowHeadersWidth(DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders);
         }
+
+
         // 배달 삭제 
         private void btnDelAll_Click(object sender, EventArgs e)
         {
@@ -251,6 +282,38 @@ namespace 배달의민족C_
                 this.btnSearch_Click(sender, e);
             }
         }
+
+        
+        // 바코드 시리얼 통신 오픈
+        private void SerialOpen()
+        {
+            string printer_port = System.Configuration.ConfigurationSettings.AppSettings.Get("PRINTER_PORT");
+
+            try
+            {
+                if (_SP_PRINTER.IsOpen)
+                    _SP_PRINTER.Close();
+
+                _SP_PRINTER.PortName = printer_port;
+                _SP_PRINTER.BaudRate = 9600;
+                _SP_PRINTER.Open();
+
+
+            }
+            catch (Exception e)
+            {
+                //MessageBox.Show(e.ToString());
+            }
+        }
+        // 바코드 시리얼 통신 닫기
+        private void SerialClose()
+        {
+            _SP_PRINTER.Close();
+        }
+
+
+            
+
     }
 }
 

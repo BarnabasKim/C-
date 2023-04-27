@@ -1,0 +1,11 @@
+D:\test\DataTable_Test\DataTable_Test\bin\Debug\DataTable_Test.exe.config
+D:\test\DataTable_Test\DataTable_Test\bin\Debug\DataTable_Test.exe
+D:\test\DataTable_Test\DataTable_Test\bin\Debug\DataTable_Test.pdb
+D:\test\DataTable_Test\DataTable_Test\obj\Debug\DataTable_Test.csproj.AssemblyReference.cache
+D:\test\DataTable_Test\DataTable_Test\obj\Debug\DataTable_Test.csproj.SuggestedBindingRedirects.cache
+D:\test\DataTable_Test\DataTable_Test\obj\Debug\DataTable_Test.Form1.resources
+D:\test\DataTable_Test\DataTable_Test\obj\Debug\DataTable_Test.Properties.Resources.resources
+D:\test\DataTable_Test\DataTable_Test\obj\Debug\DataTable_Test.csproj.GenerateResource.cache
+D:\test\DataTable_Test\DataTable_Test\obj\Debug\DataTable_Test.csproj.CoreCompileInputs.cache
+D:\test\DataTable_Test\DataTable_Test\obj\Debug\DataTable_Test.exe
+D:\test\DataTable_Test\DataTable_Test\obj\Debug\DataTable_Test.pdb

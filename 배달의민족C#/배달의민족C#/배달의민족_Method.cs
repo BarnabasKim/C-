@@ -10,7 +10,7 @@ namespace 배달의민족C_
 {
     internal class 배달의민족_Method
     {
-        string connectionString = "Data Source=tobesystem.co.kr,19813;Initial Catalog=EXAMPLE_DONG;User ID=donguser; Password=dongpwd12#";
+        private string connectionString = System.Configuration.ConfigurationSettings.AppSettings.Get("COOKPROJECT");
 
         public cTestList GetFoodKategorie(string COOK_CODE, string COOK_KATEGORIE)
         {
@@ -94,7 +94,7 @@ namespace 배달의민족C_
                     result = dataRow["BCR_FORM"].ToString();
 
 
-                    string COOK_NAME_CODE = cmd.Parameters["@COOK_NAME_CODE"].Value.ToString();
+                    //string COOK_NAME_CODE = cmd.Parameters["@COOK_NAME_CODE"].Value.ToString();
                 }
             }
             catch (Exception ex)
