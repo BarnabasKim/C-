@@ -140,7 +140,7 @@ namespace 배달의민족C_
         }
 
 
-        public void DeleteFoodItem(string COOK_NAME, string COOK_COUNT)
+        public void DeleteFoodItem(string COOK_NAME, int COOK_COUNT)
         {
             try
             {

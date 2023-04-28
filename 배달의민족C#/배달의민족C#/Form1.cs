@@ -85,7 +85,7 @@ namespace 배달의민족C_
             RfreshFood();
 
         }
-
+        //초기화
         private void btnClear_Click(object sender, EventArgs e)
         {
             RfreshFood();
@@ -112,43 +112,72 @@ namespace 배달의민족C_
                 
                 dataGridView1.DataSource = dt;   // DataGridView에 데이터 표시
                 dataGridView1.Columns["코드"].Visible = false;
+
+                NumIndex();
+                GetAllData();
             }
 
 
         }
-        //조회
-        private void button2_Click(object sender, EventArgs e)
+
+        //Row index 순번 정해주기
+        private void NumIndex()
         {
-            dataGridView1.DataSource = null;
-
-            int totalRows = 50;
-
-            for (int i = 0; i < totalRows; i++)
-            {
-                dataGridView1.Rows.Add();
-            }
-
-            RefreshData();
-
-            int currentRows = dataGridView1.RowCount;
-
-            if (dataGridView1.DataSource != null)
-            {
-                for (int i = currentRows; i < totalRows; i++)
-                {
-                    dataGridView1.Rows[i].Cells["음식"].Value = "";
-                    dataGridView1.Rows[i].Cells["가격"].Value = "";
-                    dataGridView1.Rows[i].Cells["수량"].Value = "";
-                }
-            }
-
             foreach (DataGridViewRow oRow in dataGridView1.Rows)
             {
-                oRow.HeaderCell.Value = oRow.Index.ToString();
+                oRow.HeaderCell.Value = (oRow.Index + 1).ToString();
             }
 
             dataGridView1.AutoResizeRowHeadersWidth(DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders);
         }
+
+        /// <summary>
+        /// 데이터 조회 및 빈 행 추가
+        /// </summary>
+        private void GetAllData()
+        {
+            dataGridView1.DataSource = null;
+
+            int totalRows = 50;
+            int dataRowCount = 0;
+
+            배달의민족_Method bdm = new 배달의민족_Method();
+            string category = comboBox2.Text;
+            DataTable dt = bdm.GetCookList(category);
+
+            if (dt != null)
+            {
+                dataRowCount = dt.Rows.Count;
+                dataGridView1.DataSource = dt;
+                dataGridView1.Columns["코드"].Visible = false;
+            }
+
+            for (int i = dataRowCount; i < totalRows; i++)
+            {
+                DataRow row = dt.NewRow();
+                dt.Rows.Add(row);
+            }
+
+            foreach (DataGridViewColumn column in dataGridView1.Columns)
+            {
+                column.SortMode = DataGridViewColumnSortMode.NotSortable;
+            }
+
+            dataGridView1.DataSource = dt;
+
+
+            NumIndex();
+
+        }
+
+        //조회 버튼
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            GetAllData();
+
+        }
+
 
 
         // 배달 삭제 
@@ -161,11 +190,15 @@ namespace 배달의민족C_
                 {
                     if (row.Cells["Column1"].Value != null && (bool)row.Cells["Column1"].Value)
                     {
-                        hasSelected = true;
-                        string COOK_NAME = row.Cells["음식"].Value.ToString();
-                        string COOK_COUNT = row.Cells["수량"].Value.ToString();
-                        배달의민족_Method bdm = new 배달의민족_Method();
-                        bdm.DeleteFoodItem(COOK_NAME, COOK_COUNT);
+                        if (row.Cells["음식"].Value != null && row.Cells["수량"].Value != null)
+                        {
+                            hasSelected = true;
+                            string COOK_NAME = row.Cells["음식"].Value.ToString();
+                            int COOK_COUNT = Convert.ToInt32(row.Cells["수량"].Value);
+                            if (COOK_COUNT == 0) continue; // 데이터가 0일 경우에는 삭제하지 않음
+                            배달의민족_Method bdm = new 배달의민족_Method();
+                            bdm.DeleteFoodItem(COOK_NAME, COOK_COUNT);
+                        }
                     }
                 }
                 if (hasSelected) // 하나 이상의 체크박스가 선택된 경우에만 삭제 성공 메시지 출력
@@ -180,28 +213,11 @@ namespace 배달의민족C_
             }
             catch (Exception ex)
             {
-                MessageBox.Show("음식 삭제에 실패하였습니다: " + ex.Message);
+                MessageBox.Show("빈행의 값은 삭제할 수 없습니다." );
             }
         }
 
 
-    //    //체크박스 크기 키우기
-    //    private void dataGridView1_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
-    //    {
-    //        if (e.RowIndex >= 0 && e.ColumnIndex >= 0) //체크박스 크기 키우기
-    //        {
-    //            DataGridView dgv = (DataGridView)sender;
-    //            if (dgv.Columns[e.ColumnIndex] is DataGridViewCheckBoxColumn)
-    //            {
-    //                int checkBoxSize = 30;
-    //                e.PaintBackground(e.CellBounds, true);
-    //                ControlPaint.DrawCheckBox(e.Graphics, (e.CellBounds.Width - checkBoxSize) / 2,
-    //e.CellBounds.Y + (e.CellBounds.Height - checkBoxSize) / 2,
-    //                   checkBoxSize, checkBoxSize, (bool)e.FormattedValue ? ButtonState.Checked : ButtonState.Normal);
-    //                e.Handled = true;
-    //            }
-    //        }
-    //    }
 
         // 셀 클릭시 체크박스 클릭 되도록
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -234,14 +250,33 @@ namespace 배달의민족C_
             if (e.RowIndex < 0) return;
 
             DataGridViewRow selectedRow = dataGridView1.Rows[e.RowIndex];
-            int COOK_PRICE = Convert.ToInt32(selectedRow.Cells["가격"].Value);
-            int COOK_COUNT = Convert.ToInt32(selectedRow.Cells["수량"].Value);
-            string COOK_NAME_CODE = selectedRow.Cells["코드"].Value.ToString();
 
-            Form3 form3 = new Form3(COOK_NAME_CODE, COOK_PRICE, COOK_COUNT, this);
-            form3.ShowDialog();
+            int COOK_PRICE = 0;
+            if (selectedRow.Cells["가격"].Value != DBNull.Value)
+            {
+                COOK_PRICE = Convert.ToInt32(selectedRow.Cells["가격"].Value);
+            }
 
+            int COOK_COUNT = 0;
+            if (selectedRow.Cells["수량"].Value != DBNull.Value)
+            {
+                COOK_COUNT = Convert.ToInt32(selectedRow.Cells["수량"].Value);
+            }
+
+            string COOK_NAME_CODE = string.Empty;
+            if (selectedRow.Cells["코드"].Value != DBNull.Value)
+            {
+                COOK_NAME_CODE = selectedRow.Cells["코드"].Value.ToString();
+            }
+
+            if (!string.IsNullOrEmpty(COOK_NAME_CODE) && COOK_PRICE != 0 && COOK_COUNT != 0)
+            {
+                Form3 form3 = new Form3(COOK_NAME_CODE, COOK_PRICE, COOK_COUNT, this);
+                form3.ShowDialog();
+            }
         }
+
+
         /// <summary>
         /// 검색 기능 구현 
         /// </summary>
